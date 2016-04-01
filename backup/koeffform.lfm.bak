@@ -1,0 +1,474 @@
+object RDFCoeffForm: TRDFCoeffForm
+  Left = 1846
+  Height = 554
+  Top = 353
+  Width = 639
+  Caption = 'Коэффициенты пересчета'
+  ClientHeight = 554
+  ClientWidth = 639
+  OnCreate = copyValuesToKk
+  Position = poDesktopCenter
+  LCLVersion = '1.0.12.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 59
+    Top = 495
+    Width = 639
+    Align = alBottom
+    ClientHeight = 59
+    ClientWidth = 639
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 521
+      Height = 37
+      Top = 11
+      Width = 107
+      Align = alRight
+      BorderSpacing.Around = 10
+      DefaultCaption = True
+      Kind = bkClose
+      ModalResult = 11
+      TabOrder = 0
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 495
+    Top = 0
+    Width = 639
+    Align = alClient
+    ClientHeight = 495
+    ClientWidth = 639
+    TabOrder = 1
+    object Panel3: TPanel
+      Left = 1
+      Height = 493
+      Top = 1
+      Width = 319
+      Align = alLeft
+      ClientHeight = 493
+      ClientWidth = 319
+      TabOrder = 0
+      object lb_Bumaga_ofisnaja: TLabel
+        Left = 1
+        Height = 30
+        Top = 1
+        Width = 317
+        Align = alTop
+        AutoSize = False
+        Caption = '1.1 Бумага офисная*'
+        Layout = tlCenter
+        ParentColor = False
+      end
+      object lb_Bumaga_gljancevaja: TLabel
+        Left = 1
+        Height = 30
+        Top = 31
+        Width = 317
+        Align = alTop
+        AutoSize = False
+        Caption = '1.2 Бумага глянцевая (журналы)'
+        Color = clSilver
+        Layout = tlCenter
+        ParentColor = False
+        Transparent = False
+      end
+      object lb_Bumaga_gazetnaja: TLabel
+        Left = 1
+        Height = 30
+        Top = 61
+        Width = 317
+        Align = alTop
+        AutoSize = False
+        Caption = '1.3 Бумага газетная'
+        Layout = tlCenter
+        ParentColor = False
+      end
+      object lb_Bumaga_prochaja: TLabel
+        Left = 1
+        Height = 30
+        Top = 91
+        Width = 317
+        Align = alTop
+        AutoSize = False
+        Caption = '1.4 Бумага прочая'
+        Color = clSilver
+        Layout = tlCenter
+        ParentColor = False
+        Transparent = False
+      end
+      object lb_PJeT_butylki: TLabel
+        Left = 1
+        Height = 30
+        Top = 121
+        Width = 317
+        Align = alTop
+        AutoSize = False
+        Caption = '3.1 ПЭТ бутылки'
+        Layout = tlCenter
+        ParentColor = False
+      end
+      object lb_Polipropilen: TLabel
+        Left = 1
+        Height = 30
+        Top = 151
+        Width = 317
+        Align = alTop
+        AutoSize = False
+        Caption = '3.2 Полипропилен'
+        Color = clSilver
+        Layout = tlCenter
+        ParentColor = False
+        Transparent = False
+      end
+      object lb_Polijetilen_plenki: TLabel
+        Left = 1
+        Height = 30
+        Top = 181
+        Width = 317
+        Align = alTop
+        AutoSize = False
+        Caption = '3.3 Полиэтилен пленки (ПЭНД)'
+        Layout = tlCenter
+        ParentColor = False
+      end
+      object lb_Polijetilen_tara_i_izdelija: TLabel
+        Left = 1
+        Height = 30
+        Top = 211
+        Width = 317
+        Align = alTop
+        AutoSize = False
+        Caption = '3.4 Полиэтилен тара и изделия (ПЭВД)'
+        Color = clSilver
+        Layout = tlCenter
+        ParentColor = False
+        Transparent = False
+      end
+      object lb_Polistirol: TLabel
+        Left = 1
+        Height = 30
+        Top = 241
+        Width = 317
+        Align = alTop
+        AutoSize = False
+        Caption = '3.5 Полистирол'
+        Layout = tlCenter
+        ParentColor = False
+      end
+      object lb_Polivinilhlorid: TLabel
+        Left = 1
+        Height = 30
+        Top = 271
+        Width = 317
+        Align = alTop
+        AutoSize = False
+        Caption = '3.6 Поливинилхлорид (ПВХ)'
+        Color = clSilver
+        Layout = tlCenter
+        ParentColor = False
+        Transparent = False
+      end
+      object lb_Plenki_prochie: TLabel
+        Left = 1
+        Height = 30
+        Top = 301
+        Width = 317
+        Align = alTop
+        AutoSize = False
+        Caption = '3.7 Пленки прочие'
+        Layout = tlCenter
+        ParentColor = False
+      end
+      object lb_Prochie_plastmassy_tverdye: TLabel
+        Left = 1
+        Height = 30
+        Top = 331
+        Width = 317
+        Align = alTop
+        AutoSize = False
+        Caption = '3.8 Прочие пластмассы твердые'
+        Color = clSilver
+        Layout = tlCenter
+        ParentColor = False
+        Transparent = False
+      end
+      object lb_Alljuminij: TLabel
+        Left = 1
+        Height = 30
+        Top = 361
+        Width = 317
+        Align = alTop
+        AutoSize = False
+        Caption = '8.1 Аллюминий'
+        Layout = tlCenter
+        ParentColor = False
+      end
+      object lb_Prochie_metally: TLabel
+        Left = 1
+        Height = 30
+        Top = 391
+        Width = 317
+        Align = alTop
+        AutoSize = False
+        Caption = '8.2 Прочие металлы'
+        Color = clSilver
+        Layout = tlCenter
+        ParentColor = False
+        Transparent = False
+      end
+    end
+    object Panel4: TPanel
+      Left = 320
+      Height = 493
+      Top = 1
+      Width = 318
+      Align = alClient
+      ClientHeight = 493
+      ClientWidth = 318
+      TabOrder = 1
+      object ed_Bumaga_ofisnaja: TMaskEdit
+        Tag = 1001
+        Left = 1
+        Height = 30
+        Top = 1
+        Width = 316
+        Align = alTop
+        AutoSize = False
+        CharCase = ecNormal
+        Color = clNone
+        MaxLength = 5
+        TabOrder = 9
+        OnExit = bumagaCheckValid
+        EditMask = '0.000;1;_'
+        Text = '0.370'
+        SpaceChar = '_'
+      end
+      object ed_Bumaga_gljancevaja: TMaskEdit
+        Tag = 1002
+        Left = 1
+        Height = 30
+        Top = 31
+        Width = 316
+        Align = alTop
+        AutoSize = False
+        CharCase = ecNormal
+        Color = clSilver
+        MaxLength = 5
+        TabOrder = 0
+        OnExit = bumagaCheckValid
+        EditMask = '0.000;1;_'
+        Text = '0.190'
+        SpaceChar = '_'
+      end
+      object ed_Bumaga_gazetnaja: TMaskEdit
+        Tag = 1003
+        Left = 1
+        Height = 30
+        Top = 61
+        Width = 316
+        Align = alTop
+        AutoSize = False
+        CharCase = ecNormal
+        Color = clNone
+        MaxLength = 5
+        TabOrder = 1
+        OnExit = bumagaCheckValid
+        EditMask = '0.000;1;_'
+        Text = '0.180'
+        SpaceChar = '_'
+      end
+      object ed_PJeT_butylki: TMaskEdit
+        Tag = 1006
+        Left = 1
+        Height = 30
+        Top = 121
+        Width = 316
+        Align = alTop
+        AutoSize = False
+        CharCase = ecNormal
+        Color = clNone
+        MaxLength = 5
+        TabOrder = 2
+        OnEnter = readValue
+        OnExit = poliCheckValid
+        EditMask = '0.000;1;_'
+        Text = '0.200'
+        SpaceChar = '_'
+      end
+      object ed_Polipropilen: TMaskEdit
+        Tag = 1007
+        Left = 1
+        Height = 30
+        Top = 151
+        Width = 316
+        Align = alTop
+        AutoSize = False
+        CharCase = ecNormal
+        Color = clSilver
+        MaxLength = 5
+        TabOrder = 3
+        OnEnter = readValue
+        OnExit = poliCheckValid
+        EditMask = '0.000;1;_'
+        Text = '0.070'
+        SpaceChar = '_'
+      end
+      object ed_Polijetilen_plenki: TMaskEdit
+        Tag = 1008
+        Left = 1
+        Height = 30
+        Top = 181
+        Width = 316
+        Align = alTop
+        AutoSize = False
+        CharCase = ecNormal
+        Color = clNone
+        MaxLength = 5
+        TabOrder = 4
+        OnEnter = readValue
+        OnExit = poliCheckValid
+        EditMask = '0.000;1;_'
+        Text = '0.080'
+        SpaceChar = '_'
+      end
+      object ed_Polijetilen_tara_i_izdelija: TMaskEdit
+        Tag = 1009
+        Left = 1
+        Height = 30
+        Top = 211
+        Width = 316
+        Align = alTop
+        AutoSize = False
+        CharCase = ecNormal
+        Color = clSilver
+        MaxLength = 5
+        TabOrder = 5
+        OnEnter = readValue
+        OnExit = poliCheckValid
+        EditMask = '0.000;1;_'
+        Text = '0.130'
+        SpaceChar = '_'
+      end
+      object ed_Polistirol: TMaskEdit
+        Tag = 1010
+        Left = 1
+        Height = 30
+        Top = 241
+        Width = 316
+        Align = alTop
+        AutoSize = False
+        CharCase = ecNormal
+        Color = clNone
+        MaxLength = 5
+        TabOrder = 6
+        OnEnter = readValue
+        OnExit = poliCheckValid
+        EditMask = '0.000;1;_'
+        Text = '0.050'
+        SpaceChar = '_'
+      end
+      object ed_Polivinilhlorid: TMaskEdit
+        Tag = 1011
+        Left = 1
+        Height = 30
+        Top = 271
+        Width = 316
+        Align = alTop
+        AutoSize = False
+        CharCase = ecNormal
+        Color = clSilver
+        MaxLength = 5
+        TabOrder = 7
+        OnEnter = readValue
+        OnExit = poliCheckValid
+        EditMask = '0.000;1;_'
+        Text = '0.009'
+        SpaceChar = '_'
+      end
+      object ed_Plenki_prochie: TMaskEdit
+        Tag = 1012
+        Left = 1
+        Height = 30
+        Top = 301
+        Width = 316
+        Align = alTop
+        AutoSize = False
+        CharCase = ecNormal
+        Color = clNone
+        MaxLength = 5
+        TabOrder = 8
+        OnEnter = readValue
+        OnExit = poliCheckValid
+        EditMask = '0.000;1;_'
+        Text = '0.350'
+        SpaceChar = '_'
+      end
+      object ed_Bumaga_prochaja: TEdit
+        Tag = 1004
+        Left = 1
+        Height = 30
+        Top = 91
+        Width = 316
+        Align = alTop
+        AutoSize = False
+        Color = clSilver
+        MaxLength = 5
+        OnExit = poliCheckValid
+        ReadOnly = True
+        TabOrder = 10
+        Text = '0.260'
+      end
+      object ed_Prochie_plastmassy_tverdye: TEdit
+        Tag = 1013
+        Left = 1
+        Height = 30
+        Top = 331
+        Width = 316
+        Align = alTop
+        AutoSize = False
+        Color = clSilver
+        MaxLength = 5
+        OnEnter = readValue
+        OnExit = bumagaCheckValid
+        ReadOnly = True
+        TabOrder = 11
+        Text = '0.111'
+      end
+      object ed_Alljuminij: TMaskEdit
+        Tag = 1018
+        Left = 1
+        Height = 30
+        Top = 361
+        Width = 316
+        Align = alTop
+        AutoSize = False
+        CharCase = ecNormal
+        Color = clNone
+        MaxLength = 5
+        TabOrder = 12
+        OnEnter = readValue
+        OnExit = poliCheckValid
+        EditMask = '0.000;1;_'
+        Text = '0.350'
+        SpaceChar = '_'
+      end
+      object ed_Prochie_metally: TEdit
+        Tag = 1019
+        Left = 1
+        Height = 30
+        Top = 391
+        Width = 316
+        Align = alTop
+        AutoSize = False
+        Color = clSilver
+        MaxLength = 5
+        OnEnter = readValue
+        OnExit = bumagaCheckValid
+        ReadOnly = True
+        TabOrder = 13
+        Text = '0.111'
+      end
+    end
+  end
+end

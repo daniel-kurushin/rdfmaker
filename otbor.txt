@@ -1,0 +1,1188 @@
+        object pl_%A%_otbor1: TPanel
+          Height = 80
+          Top = %T%
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '%C%'
+          TabOrder = %O%
+          object rg_%A%_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_%A%_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_%A%_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Bumaga_otbor1: TPanel
+          Height = 80
+          Top = 30
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '1 Бумага   '
+          TabOrder = 0
+          object rg_Bumaga_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Bumaga_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Bumaga_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Bumaga_ofisnaja_otbor1: TPanel
+          Height = 80
+          Top = 110
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '1.1 Бумага офисная*  '
+          TabOrder = 1
+          object rg_Bumaga_ofisnaja_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Bumaga_ofisnaja_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Bumaga_ofisnaja_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Bumaga_gljancevaja_otbor1: TPanel
+          Height = 80
+          Top = 190
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '1.2 Бумага глянцевая (журналы) '
+          TabOrder = 2
+          object rg_Bumaga_gljancevaja_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Bumaga_gljancevaja_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Bumaga_gljancevaja_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Bumaga_gazetnaja_otbor1: TPanel
+          Height = 80
+          Top = 270
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '1.3 Бумага газетная  '
+          TabOrder = 3
+          object rg_Bumaga_gazetnaja_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Bumaga_gazetnaja_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Bumaga_gazetnaja_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Bumaga_prochaja_otbor1: TPanel
+          Height = 80
+          Top = 350
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '1.4 Бумага прочая  '
+          TabOrder = 4
+          object rg_Bumaga_prochaja_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Bumaga_prochaja_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Bumaga_prochaja_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Karton_otbor1: TPanel
+          Height = 80
+          Top = 430
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '2 Картон   '
+          TabOrder = 5
+          object rg_Karton_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Karton_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Karton_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Polimery_otbor1: TPanel
+          Height = 80
+          Top = 510
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '3 Полимеры   '
+          TabOrder = 6
+          object rg_Polimery_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Polimery_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Polimery_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_PJeT_butylki_otbor1: TPanel
+          Height = 80
+          Top = 590
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '3.1 ПЭТ бутылки  '
+          TabOrder = 7
+          object rg_PJeT_butylki_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_PJeT_butylki_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_PJeT_butylki_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Polipropilen_otbor1: TPanel
+          Height = 80
+          Top = 670
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '3.2 Полипропилен   '
+          TabOrder = 8
+          object rg_Polipropilen_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Polipropilen_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Polipropilen_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Polijetilen_plenki_otbor1: TPanel
+          Height = 80
+          Top = 750
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '3.3 Полиэтилен пленки (ПЭНД) '
+          TabOrder = 9
+          object rg_Polijetilen_plenki_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Polijetilen_plenki_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Polijetilen_plenki_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Polijetilen_tara_i_izdelija_otbor1: TPanel
+          Height = 80
+          Top = 830
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '3.4 Полиэтилен тара и изделия'
+          TabOrder = 10
+          object rg_Polijetilen_tara_i_izdelija_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Polijetilen_tara_i_izdelija_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Polijetilen_tara_i_izdelija_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Polistirol_otbor1: TPanel
+          Height = 80
+          Top = 910
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '3.5 Полистирол   '
+          TabOrder = 11
+          object rg_Polistirol_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Polistirol_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Polistirol_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Polivinilhlorid_otbor1: TPanel
+          Height = 80
+          Top = 990
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '3.6 Поливинилхлорид   '
+          TabOrder = 12
+          object rg_Polivinilhlorid_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Polivinilhlorid_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Polivinilhlorid_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Plenki_prochie_otbor1: TPanel
+          Height = 80
+          Top = 1070
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '3.7 Пленки прочие  '
+          TabOrder = 13
+          object rg_Plenki_prochie_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Plenki_prochie_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Plenki_prochie_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Prochie_plastmassy_tverdye_otbor1: TPanel
+          Height = 80
+          Top = 1150
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '3.8 Прочие пластмассы твердые '
+          TabOrder = 14
+          object rg_Prochie_plastmassy_tverdye_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Prochie_plastmassy_tverdye_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Prochie_plastmassy_tverdye_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Tetrapak_otbor1: TPanel
+          Height = 80
+          Top = 1230
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '4 Тетрапак   '
+          TabOrder = 15
+          object rg_Tetrapak_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Tetrapak_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Tetrapak_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Organika_otbor1: TPanel
+          Height = 80
+          Top = 1310
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '5 Органика   '
+          TabOrder = 16
+          object rg_Organika_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Organika_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Organika_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Steklo_otbor1: TPanel
+          Height = 80
+          Top = 1390
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '6 Стекло   '
+          TabOrder = 17
+          object rg_Steklo_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Steklo_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Steklo_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Chernye_metally_otbor1: TPanel
+          Height = 80
+          Top = 1470
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '7 Черные металлы  '
+          TabOrder = 18
+          object rg_Chernye_metally_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Chernye_metally_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Chernye_metally_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Cvetnye_metally_otbor1: TPanel
+          Height = 80
+          Top = 1550
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '8 Цветные металлы  '
+          TabOrder = 19
+          object rg_Cvetnye_metally_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Cvetnye_metally_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Cvetnye_metally_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Alljuminij_otbor1: TPanel
+          Height = 80
+          Top = 1630
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '8.1.Аллюминий    '
+          TabOrder = 20
+          object rg_Alljuminij_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Alljuminij_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Alljuminij_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Prochie_metally_otbor1: TPanel
+          Height = 80
+          Top = 1710
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '8.2 Прочие металлы  '
+          TabOrder = 21
+          object rg_Prochie_metally_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Prochie_metally_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Prochie_metally_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Drevesina_otbor1: TPanel
+          Height = 80
+          Top = 1790
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '9 Древесина   '
+          TabOrder = 22
+          object rg_Drevesina_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Drevesina_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Drevesina_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Tekstil_otbor1: TPanel
+          Height = 80
+          Top = 1870
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '10 Текстиль   '
+          TabOrder = 23
+          object rg_Tekstil_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Tekstil_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Tekstil_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Inertnye_materialy_otbor1: TPanel
+          Height = 80
+          Top = 1950
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '11 Инертные материалы (камни, штукатурка,'
+          TabOrder = 24
+          object rg_Inertnye_materialy_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Inertnye_materialy_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Inertnye_materialy_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+
+        object pl_Prochie_komponenty_otbor1: TPanel
+          Height = 80
+          Top = 2030
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '12 Прочие компоненты  '
+          TabOrder = 25
+          object rg_Prochie_komponenty_otbor: TRadioGroup
+            Left = 513
+            Hint = 'P/C — ручная сортировка'
+            Width = 400
+            Align = alRight
+            AutoFill = True
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetDefPerc
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Prochie_komponenty_otbor: TEdit
+            Left = 1033
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            TabOrder = 1
+          end
+          object ed_def_Prochie_komponenty_otbor: TEdit
+            Left = 913
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+

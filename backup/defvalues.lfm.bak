@@ -1,0 +1,223 @@
+object fm_DefaultValues: Tfm_DefaultValues
+  Left = 538
+  Height = 716
+  Top = 225
+  Width = 1079
+  Caption = 'fm_DefaultValues'
+  ClientHeight = 716
+  ClientWidth = 1079
+  LCLVersion = '1.0.12.0'
+  object mm_Default_Values: TMemo
+    Left = 0
+    Height = 336
+    Top = 0
+    Width = 536
+    Lines.Strings = (
+      'ed_Bumaga^TEdit^0.000'
+      'ed_Bumaga_ofisnaja^TEdit^0.000'
+      'ed_Bumaga_gljancevaja^TEdit^0.000'
+      'ed_Bumaga_gazetnaja^TEdit^0.000'
+      'ed_Bumaga_prochaja^TEdit^0.000'
+      'ed_Karton^TEdit^0.000'
+      'ed_Polimery^TEdit^0.000'
+      'ed_PJeT_butylki^TEdit^0.000'
+      'ed_Polipropilen^TEdit^0.000'
+      'ed_Polijetilen_plenki^TEdit^0.000'
+      'ed_Polijetilen_tara_i_izdelija^TEdit^0.000'
+      'ed_Polistirol^TEdit^0.000'
+      'ed_Polivinilhlorid^TEdit^0.000'
+      'ed_Plenki_prochie^TEdit^0.000'
+      'ed_Prochie_plastmassy_tverdye^TEdit^0.000'
+      'ed_Tetrapak^TEdit^0.000'
+      'ed_Organika^TEdit^0.000'
+      'ed_Steklo^TEdit^0.000'
+      'ed_Chernye_metally^TEdit^0.000'
+      'ed_Cvetnye_metally^TEdit^0.000'
+      'ed_Alljuminij^TEdit^0.000'
+      'ed_Prochie_metally^TEdit^0.000'
+      'ed_Drevesina^TEdit^0.000'
+      'ed_Tekstil^TEdit^0.000'
+      'ed_Inertnye_materialy^TEdit^0.000'
+      'ed_Prochie_komponenty^TEdit^0.000'
+      'cb_Melk_Frac^TCheckBox^0'
+      'rg_Melk_Frac^TRadioGroup^-1'
+      'rg_Bumaga_otbor^TRadioGroup^0'
+      'ed_Bumaga_otbor^TEdit^'
+      'ed_def_Bumaga_otbor^TEdit^'
+      'rg_Bumaga_ofisnaja_otbor^TRadioGroup^0'
+      'ed_Bumaga_ofisnaja_otbor^TEdit^'
+      'ed_def_Bumaga_ofisnaja_otbor^TEdit^'
+      'rg_Bumaga_gljancevaja_otbor^TRadioGroup^0'
+      'ed_Bumaga_gljancevaja_otbor^TEdit^'
+      'ed_def_Bumaga_gljancevaja_otbor^TEdit^'
+      'rg_Bumaga_gazetnaja_otbor^TRadioGroup^0'
+      'ed_Bumaga_gazetnaja_otbor^TEdit^'
+      'ed_def_Bumaga_gazetnaja_otbor^TEdit^'
+      'rg_Bumaga_prochaja_otbor^TRadioGroup^0'
+      'ed_Bumaga_prochaja_otbor^TEdit^'
+      'ed_def_Bumaga_prochaja_otbor^TEdit^'
+      'rg_Karton_otbor^TRadioGroup^0'
+      'ed_Karton_otbor^TEdit^'
+      'ed_def_Karton_otbor^TEdit^'
+      'rg_Polimery_otbor^TRadioGroup^0'
+      'ed_Polimery_otbor^TEdit^'
+      'ed_def_Polimery_otbor^TEdit^'
+      'rg_PJeT_butylki_otbor^TRadioGroup^0'
+      'ed_PJeT_butylki_otbor^TEdit^'
+      'ed_def_PJeT_butylki_otbor^TEdit^'
+      'rg_Polipropilen_otbor^TRadioGroup^0'
+      'ed_Polipropilen_otbor^TEdit^'
+      'ed_def_Polipropilen_otbor^TEdit^'
+      'rg_Polijetilen_plenki_otbor^TRadioGroup^0'
+      'ed_Polijetilen_plenki_otbor^TEdit^'
+      'ed_def_Polijetilen_plenki_otbor^TEdit^'
+      'rg_Polijetilen_tara_i_izdelija_otbor^TRadioGroup^0'
+      'ed_Polijetilen_tara_i_izdelija_otbor^TEdit^'
+      'ed_def_Polijetilen_tara_i_izdelija_otbor^TEdit^'
+      'rg_Polistirol_otbor^TRadioGroup^0'
+      'ed_Polistirol_otbor^TEdit^'
+      'ed_def_Polistirol_otbor^TEdit^'
+      'rg_Polivinilhlorid_otbor^TRadioGroup^0'
+      'ed_Polivinilhlorid_otbor^TEdit^'
+      'ed_def_Polivinilhlorid_otbor^TEdit^'
+      'rg_Plenki_prochie_otbor^TRadioGroup^0'
+      'ed_Plenki_prochie_otbor^TEdit^'
+      'ed_def_Plenki_prochie_otbor^TEdit^'
+      'rg_Prochie_plastmassy_tverdye_otbor^TRadioGroup^0'
+      'ed_Prochie_plastmassy_tverdye_otbor^TEdit^'
+      'ed_def_Prochie_plastmassy_tverdye_otbor^TEdit^'
+      'rg_Tetrapak_otbor^TRadioGroup^0'
+      'ed_Tetrapak_otbor^TEdit^'
+      'ed_def_Tetrapak_otbor^TEdit^'
+      'rg_Organika_otbor^TRadioGroup^0'
+      'ed_Organika_otbor^TEdit^'
+      'ed_def_Organika_otbor^TEdit^'
+      'rg_Steklo_otbor^TRadioGroup^0'
+      'ed_Steklo_otbor^TEdit^'
+      'ed_def_Steklo_otbor^TEdit^'
+      'rg_Chernye_metally_otbor^TRadioGroup^0'
+      'ed_Chernye_metally_otbor^TEdit^'
+      'ed_def_Chernye_metally_otbor^TEdit^'
+      'rg_Cvetnye_metally_otbor^TRadioGroup^0'
+      'ed_Cvetnye_metally_otbor^TEdit^'
+      'ed_def_Cvetnye_metally_otbor^TEdit^'
+      'rg_Alljuminij_otbor^TRadioGroup^0'
+      'ed_Alljuminij_otbor^TEdit^'
+      'ed_def_Alljuminij_otbor^TEdit^'
+      'rg_Prochie_metally_otbor^TRadioGroup^0'
+      'ed_Prochie_metally_otbor^TEdit^'
+      'ed_def_Prochie_metally_otbor^TEdit^'
+      'rg_Drevesina_otbor^TRadioGroup^0'
+      'ed_Drevesina_otbor^TEdit^'
+      'ed_def_Drevesina_otbor^TEdit^'
+      'rg_Tekstil_otbor^TRadioGroup^0'
+      'ed_Tekstil_otbor^TEdit^'
+      'ed_def_Tekstil_otbor^TEdit^'
+      'rg_Inertnye_materialy_otbor^TRadioGroup^0'
+      'ed_Inertnye_materialy_otbor^TEdit^'
+      'ed_def_Inertnye_materialy_otbor^TEdit^'
+      'rg_Prochie_komponenty_otbor^TRadioGroup^0'
+      'ed_Prochie_komponenty_otbor^TEdit^'
+      'ed_def_Prochie_komponenty_otbor^TEdit^'
+      'rg_RDF_Dop_Podg^TEdit^0^0^0^0^0^0^0^0^0^0^0^0^0^0^'
+      'ed_F_Bumaga_ofisnaja^TEdit^0.00'
+      'ed_F_Bumaga_gljancevaja^TEdit^0.00'
+      'ed_F_Bumaga_gazetnaja^TEdit^0.00'
+      'ed_F_Bumaga_prochaja^TEdit^0.00'
+      'ed_F_Karton^TEdit^0.00'
+      'ed_F_PJeT_butylki^TEdit^0.00'
+      'ed_F_Polipropilen^TEdit^0.00'
+      'ed_F_Polijetilen_plenki^TEdit^0.00'
+      'ed_F_Polijetilen_tara_i_izdelija^TEdit^0.00'
+      'ed_F_Polistirol^TEdit^0.00'
+      'ed_F_Plenki_prochie^TEdit^0.00'
+      'ed_F_Prochie_plastmassy_tverdye^TEdit^0.00'
+      'ed_F_Tetrapak^TEdit^0.00'
+      'ed_F_Drevesina^TEdit^0.00'
+      'ed_F_Tekstil^TEdit^0.00'
+      'rg_Selectivnost^TRadioGroup^-1'
+      'rg_OtborPVXPercent^TRadioGroup^-1'
+      'ed_F_OtborPVXPercent^TEdit^0.00'
+    )
+    ScrollBars = ssAutoVertical
+    TabOrder = 0
+  end
+  object mm_HTML_Head: TMemo
+    Left = 570
+    Height = 234
+    Top = 6
+    Width = 342
+    Lines.Strings = (
+      '<html xmlns:o="urn:schemas-microsoft-com:office:office"'
+      'xmlns:w="urn:schemas-microsoft-com:office:word"'
+      'xmlns="http://www.w3.org/TR/REC-html40">'
+      '<head>'
+      '    <meta http-equiv=Content-Type content="text/html; charset=utf-8">'
+      '    <meta name=ProgId content=Word.Document>'
+      '    <meta name=Generator content="RDFMaker">'
+      '</head>'
+      '<body>'
+      '<div>'
+    )
+    TabOrder = 1
+  end
+  object mm_HTML_tail: TMemo
+    Left = 570
+    Height = 90
+    Top = 248
+    Width = 342
+    Lines.Strings = (
+      '</div>'
+      '</body>'
+      '</html>'
+    )
+    TabOrder = 2
+  end
+  object lb_Colors: TListBox
+    Left = 8
+    Height = 336
+    Top = 344
+    Width = 336
+    Items.Strings = (
+      'cl_Bumaga^20^200^180'
+      'cl_Bumaga_ofisnaja^10^185^235'
+      'cl_Bumaga_gljancevaja^40^184^20'
+      'cl_Bumaga_gazetnaja^245^152^12'
+      'cl_Bumaga_prochaja^177^10^220'
+      'cl_Karton^7^200^120'
+      'cl_Polimery^190^37^38'
+      'cl_PJeT_butylki^190^37^18'
+      'cl_Polipropilen^82^97^174'
+      'cl_Polijetilen_plenki^53^257^18'
+      'cl_Polijetilen_tara_i_izdelija^250^225^76'
+      'cl_Polistirol^200^200^200'
+      'cl_Polivinilhlorid^147^216^80'
+      'cl_Plenki_prochie^240^170^230'
+      'cl_Prochie_plastmassy_tverdye^41^12^140'
+      'cl_Tetrapak^201^70^37'
+      'cl_Organika^126^135^246'
+      'cl_Steklo^105^105^105'
+      'cl_Chernye_metally^250^255^60'
+      'cl_Cvetnye_metally^235^51^220'
+      'cl_Alljuminij^245^61^210'
+      'cl_Prochie_metally^105^155^155'
+      'cl_Drevesina^60^146^76'
+      'cl_Tekstil^255^40^40'
+      'cl_Inertnye_materialy^172^140^105'
+      'cl_Prochie_komponenty^189^213^71'
+    )
+    ItemHeight = 23
+    ScrollWidth = 318
+    TabOrder = 3
+  end
+  object ListBox1: TListBox
+    Left = 352
+    Height = 336
+    Top = 344
+    Width = 624
+    ItemHeight = 0
+    ScrollWidth = 622
+    TabOrder = 4
+    TopIndex = -1
+  end
+end

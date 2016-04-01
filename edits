@@ -1,0 +1,260 @@
+            object ed_Bumaga : TEdit
+              Left = 0
+              Height = 30
+              Top = 0
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Text = ''
+            end
+            object ed_Bumaga_ofisnaja : TEdit
+              Left = 0
+              Height = 30
+              Top = 30
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Text = ''
+            end
+            object ed_Bumaga_gljancevaja : TEdit
+              Left = 0
+              Height = 30
+              Top = 60
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Text = ''
+            end
+            object ed_Bumaga_gazetnaja : TEdit
+              Left = 0
+              Height = 30
+              Top = 90
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Text = ''
+            end
+            object ed_Bumaga_prochaja : TEdit
+              Left = 0
+              Height = 30
+              Top = 120
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Text = ''
+            end
+            object ed_Karton : TEdit
+              Left = 0
+              Height = 30
+              Top = 150
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Text = ''
+            end
+            object ed_Polimery : TEdit
+              Left = 0
+              Height = 30
+              Top = 180
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Text = ''
+            end
+            object ed_PJeT_butylki : TEdit
+              Left = 0
+              Height = 30
+              Top = 210
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Text = ''
+            end
+            object ed_Polipropilen : TEdit
+              Left = 0
+              Height = 30
+              Top = 240
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Text = ''
+            end
+            object ed_Polijetilen_plenki : TEdit
+              Left = 0
+              Height = 30
+              Top = 270
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Text = ''
+            end
+            object ed_Polijetilen_tara_i_izdelija : TEdit
+              Left = 0
+              Height = 30
+              Top = 300
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Text = ''
+            end
+            object ed_Polistirol : TEdit
+              Left = 0
+              Height = 30
+              Top = 330
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Text = ''
+            end
+            object ed_Polivinilhlorid : TEdit
+              Left = 0
+              Height = 30
+              Top = 360
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Text = ''
+            end
+            object ed_Plenki_prochie : TEdit
+              Left = 0
+              Height = 30
+              Top = 390
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Text = ''
+            end
+            object ed_Prochie_plastmassy_tverdye : TEdit
+              Left = 0
+              Height = 30
+              Top = 420
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Text = ''
+            end
+            object ed_Tetrapak : TEdit
+              Left = 0
+              Height = 30
+              Top = 450
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Text = ''
+            end
+            object ed_Organika : TEdit
+              Left = 0
+              Height = 30
+              Top = 480
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Text = ''
+            end
+            object ed_Steklo : TEdit
+              Left = 0
+              Height = 30
+              Top = 510
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Text = ''
+            end
+            object ed_Chernye_metally : TEdit
+              Left = 0
+              Height = 30
+              Top = 540
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Text = ''
+            end
+            object ed_Cvetnye_metally : TEdit
+              Left = 0
+              Height = 30
+              Top = 570
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Text = ''
+            end
+            object ed_Alljuminij : TEdit
+              Left = 0
+              Height = 30
+              Top = 600
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Text = ''
+            end
+            object ed_Prochie_metally : TEdit
+              Left = 0
+              Height = 30
+              Top = 630
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Text = ''
+            end
+            object ed_Drevesina : TEdit
+              Left = 0
+              Height = 30
+              Top = 660
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Text = ''
+            end
+            object ed_Tekstil : TEdit
+              Left = 0
+              Height = 30
+              Top = 690
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Text = ''
+            end
+            object ed_Inertnye_materialy : TEdit
+              Left = 0
+              Height = 30
+              Top = 720
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Text = ''
+            end
+            object ed_Prochie_komponenty : TEdit
+              Left = 0
+              Height = 30
+              Top = 750
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Text = ''
+            end

@@ -1,0 +1,31 @@
+    object pl_%N%: TPanel
+      Height = 30
+      Top = %T%
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '%C%'
+      Color = %CL%
+      TabOrder = %K%
+      object ed_rss_%N%: %CLS%
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        %P% = '%T0%'
+      end
+      object ed_rso_%N%: %CLS%
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        %P% = '%T1%'
+      end
+      object ed_avs_%N%: %CLS%
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        %P% = '%T2%'
+      end
+    end
+

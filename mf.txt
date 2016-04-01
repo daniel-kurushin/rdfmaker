@@ -1,0 +1,30 @@
+  object pl_%N%: TPanel
+    Top = %T%
+    Height = 30
+    Width = 860
+    Align = alTop
+    Alignment = taLeftJustify
+    BorderSpacing.Around = 3
+    BorderSpacing.InnerBorder = 2
+    Caption = '%C%'
+    TabOrder = %K%
+    object ed_%N%_50: TEdit
+      Width = 100
+      Align = alRight
+      TabOrder = 0
+      Text = '%T50%'
+    end
+    object ed_%N%_75: TEdit
+      Width = 100
+      Align = alRight
+      TabOrder = 1
+      Text = '%T75%'
+    end
+    object ed_%N%_100: TEdit
+      Width = 100
+      Align = alRight
+      TabOrder = 2
+      Text = '%T100%'
+    end
+  end
+

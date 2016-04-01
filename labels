@@ -1,0 +1,312 @@
+            object lb_Bumaga : TLabel
+              Left = 0
+              Height = 30
+              Top = 0
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Caption = '1 Бумага'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Bumaga_ofisnaja : TLabel
+              Left = 0
+              Height = 30
+              Top = 30
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Caption = '1.1 Бумага офисная*'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Bumaga_gljancevaja : TLabel
+              Left = 0
+              Height = 30
+              Top = 60
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Caption = '1.2 Бумага глянцевая (журналы)'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Bumaga_gazetnaja : TLabel
+              Left = 0
+              Height = 30
+              Top = 90
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Caption = '1.3 Бумага газетная'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Bumaga_prochaja : TLabel
+              Left = 0
+              Height = 30
+              Top = 120
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Caption = '1.4 Бумага прочая'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Karton : TLabel
+              Left = 0
+              Height = 30
+              Top = 150
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Caption = '2 Картон'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Polimery : TLabel
+              Left = 0
+              Height = 30
+              Top = 180
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Caption = '3 Полимеры'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_PJeT_butylki : TLabel
+              Left = 0
+              Height = 30
+              Top = 210
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Caption = '3.1 ПЭТ бутылки'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Polipropilen : TLabel
+              Left = 0
+              Height = 30
+              Top = 240
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Caption = '3.2 Полипропилен'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Polijetilen_plenki : TLabel
+              Left = 0
+              Height = 30
+              Top = 270
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Caption = '3.3 Полиэтилен пленки (ПЭНД)'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Polijetilen_tara_i_izdelija : TLabel
+              Left = 0
+              Height = 30
+              Top = 300
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Caption = '3.4 Полиэтилен тара и изделия (ПЭВД)'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Polistirol : TLabel
+              Left = 0
+              Height = 30
+              Top = 330
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Caption = '3.5 Полистирол'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Polivinilhlorid : TLabel
+              Left = 0
+              Height = 30
+              Top = 360
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Caption = '3.6 Поливинилхлорид (ПВХ)'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Plenki_prochie : TLabel
+              Left = 0
+              Height = 30
+              Top = 390
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Caption = '3.7 Пленки прочие'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Prochie_plastmassy_tverdye : TLabel
+              Left = 0
+              Height = 30
+              Top = 420
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Caption = '3.8 Прочие пластмассы твердые'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Tetrapak : TLabel
+              Left = 0
+              Height = 30
+              Top = 450
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Caption = '4 Тетрапак'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Organika : TLabel
+              Left = 0
+              Height = 30
+              Top = 480
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Caption = '5 Органика'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Steklo : TLabel
+              Left = 0
+              Height = 30
+              Top = 510
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Caption = '6 Стекло'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Chernye_metally : TLabel
+              Left = 0
+              Height = 30
+              Top = 540
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Caption = '7 Черные металлы'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Cvetnye_metally : TLabel
+              Left = 0
+              Height = 30
+              Top = 570
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Caption = '8 Цветные металлы'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Alljuminij : TLabel
+              Left = 0
+              Height = 30
+              Top = 600
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Caption = '8.1 Аллюминий'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Prochie_metally : TLabel
+              Left = 0
+              Height = 30
+              Top = 630
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Caption = '8.2 Прочие металлы'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Drevesina : TLabel
+              Left = 0
+              Height = 30
+              Top = 660
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Caption = '9 Древесина'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Tekstil : TLabel
+              Left = 0
+              Height = 30
+              Top = 690
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Caption = '10 Текстиль'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Inertnye_materialy : TLabel
+              Left = 0
+              Height = 30
+              Top = 720
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clSilver
+              Caption = '11 Инертные материалы (камни, штукатурка, бетонные изделия и пр.)'
+              Layout = tlCenter
+              ParentColor = False
+            end
+            object lb_Prochie_komponenty : TLabel
+              Left = 0
+              Height = 30
+              Top = 750
+              Width = 650
+              Align = alTop
+              AutoSize = False
+              Color = clNone
+              Caption = '12 Прочие компоненты'
+              Layout = tlCenter
+              ParentColor = False
+            end

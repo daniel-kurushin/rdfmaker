@@ -1,0 +1,74 @@
+unit rdfdata;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils;
+
+const
+
+  Bumaga_ofisnaja     = 1002;
+  Bumaga_gljancevaja  = 1003;
+  Bumaga_gazetnaja    = 1004;
+  Bumaga_prochaja     = 1005;
+  Karton              = 1006;
+
+  PJeT_butylki        = 1007;
+  Polipropilen        = 1008;
+  Polijetilen_plenki  = 1009;
+  Polijetilen_tara_i_izdelija  = 1010;
+  Polistirol          = 1011;
+  Polivinilhlorid     = 1012;
+  Plenki_prochie      = 1013;
+  Prochie_plastmassy_tverdye  = 1014;
+
+  Tetrapak            = 1015;
+  Organika            = 1016;
+  Steklo              = 1017;
+  Chernye_metally     = 1018;
+  Alljuminij          = 1019;
+  Prochie_metally     = 1020;
+  Drevesina           = 1021;
+  Tekstil             = 1022;
+  Inertnye_materialy  = 1023;
+  Prochie_komponenty  = 1024;
+
+  Bumaga  = 1000;
+  Polimery  = 2000;
+  Cvetnye_metally  = 3000;
+
+  c_calculated = 'calculated';
+  c_entered    = 'entered';
+  c_untouched  = '0';
+
+type
+
+  TRDFData = record
+    //A, // Морфологический состав отходов %
+    //B, // Отсев мелких фракций
+    //B0,//                      по умолчанию (максимальный)
+    //C, // % отбора
+    //C0,// Ручная сортировка
+    //C1,// Ручная раздельная
+    //C2,// Автоматическая
+    //F, // Доп. подготовка RDF
+    //Z, // Зольность
+    //S, // Сера
+    //T, // Теплотворность
+    //Cl,// Хлор
+    //k, // Коэффициенты пересчета
+    //  : array[Bumaga_ofisnaja..Prochie_komponenty] of Extended;
+  end;
+
+var
+  fsettings : TFormatSettings;
+implementation
+
+ { TRDF }
+
+begin
+  fsettings.DecimalSeparator := '.';
+end.
+

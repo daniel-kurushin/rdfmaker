@@ -1,0 +1,660 @@
+object RDFOtborForm: TRDFOtborForm
+  Left = 1326
+  Height = 654
+  Top = 318
+  Width = 876
+  Caption = 'Рекомендуемые значения отбора (C)'
+  ClientHeight = 654
+  ClientWidth = 876
+  LCLVersion = '1.0.12.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 59
+    Top = 595
+    Width = 876
+    Align = alBottom
+    ClientHeight = 59
+    ClientWidth = 876
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 758
+      Height = 37
+      Top = 11
+      Width = 107
+      Align = alRight
+      BorderSpacing.Around = 10
+      DefaultCaption = True
+      Kind = bkClose
+      ModalResult = 11
+      TabOrder = 0
+    end
+  end
+  object ScrollBox1: TScrollBox
+    Left = 0
+    Height = 595
+    Top = 0
+    Width = 876
+    HorzScrollBar.Page = 874
+    VertScrollBar.Page = 593
+    Align = alClient
+    ClientHeight = 593
+    ClientWidth = 874
+    TabOrder = 1
+    object pl_a: TPanel
+      Left = 3
+      Height = 30
+      Top = 3
+      Width = 868
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = 'Фракция'
+      ClientHeight = 30
+      ClientWidth = 868
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 0
+      object ed_rss_a: TPanel
+        Left = 568
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        Caption = 'Ручная'
+        TabOrder = 0
+      end
+      object ed_rso_a: TPanel
+        Left = 668
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        Caption = 'Ручная разд.'
+        TabOrder = 1
+      end
+      object ed_avs_a: TPanel
+        Left = 768
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        Caption = 'Автомат.'
+        TabOrder = 2
+      end
+    end
+    object pl_Bumaga: TPanel
+      Left = 3
+      Height = 30
+      Top = 36
+      Width = 868
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = 'Бумага'
+      ClientHeight = 30
+      ClientWidth = 868
+      Color = clNone
+      ParentColor = False
+      TabOrder = 1
+      object ed_rss_Bumaga: TEdit
+        Left = 568
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '0.22'
+      end
+      object ed_rso_Bumaga: TEdit
+        Left = 668
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0.55'
+      end
+      object ed_avs_Bumaga: TEdit
+        Left = 768
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.37'
+      end
+    end
+    object pl_Karton: TPanel
+      Left = 3
+      Height = 30
+      Top = 69
+      Width = 868
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = 'Картон'
+      ClientHeight = 30
+      ClientWidth = 868
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 2
+      object ed_rss_Karton: TEdit
+        Left = 568
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '0.22'
+      end
+      object ed_rso_Karton: TEdit
+        Left = 668
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0.55'
+      end
+      object ed_avs_Karton: TEdit
+        Left = 768
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.70'
+      end
+    end
+    object pl_Polimery: TPanel
+      Left = 3
+      Height = 30
+      Top = 102
+      Width = 868
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = 'Полимеры (для всех)'
+      ClientHeight = 30
+      ClientWidth = 868
+      Color = clNone
+      ParentColor = False
+      TabOrder = 3
+      object ed_rss_Polimery: TEdit
+        Left = 568
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '0.30'
+      end
+      object ed_rso_Polimery: TEdit
+        Left = 668
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0.45'
+      end
+      object ed_avs_Polimery: TEdit
+        Left = 768
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.50'
+      end
+    end
+    object pl_Tetrapak: TPanel
+      Left = 3
+      Height = 30
+      Top = 135
+      Width = 868
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = 'Тетрапак'
+      ClientHeight = 30
+      ClientWidth = 868
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 4
+      object ed_rss_Tetrapak: TEdit
+        Left = 568
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '0.20'
+      end
+      object ed_rso_Tetrapak: TEdit
+        Left = 668
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0.20'
+      end
+      object ed_avs_Tetrapak: TEdit
+        Left = 768
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.50'
+      end
+    end
+    object pl_Organika: TPanel
+      Left = 3
+      Height = 30
+      Top = 168
+      Width = 868
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = 'Органика'
+      ClientHeight = 30
+      ClientWidth = 868
+      Color = clNone
+      ParentColor = False
+      TabOrder = 5
+      object ed_rss_Organika: TEdit
+        Left = 568
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '0'
+      end
+      object ed_rso_Organika: TEdit
+        Left = 668
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0'
+      end
+      object ed_avs_Organika: TEdit
+        Left = 768
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0'
+      end
+    end
+    object pl_Steklo: TPanel
+      Left = 3
+      Height = 30
+      Top = 201
+      Width = 868
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = 'Стекло'
+      ClientHeight = 30
+      ClientWidth = 868
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 6
+      object ed_rss_Steklo: TEdit
+        Left = 568
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '0.30'
+      end
+      object ed_rso_Steklo: TEdit
+        Left = 668
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0.40'
+      end
+      object ed_avs_Steklo: TEdit
+        Left = 768
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.40'
+      end
+    end
+    object pl_Chernye_metally: TPanel
+      Left = 3
+      Height = 30
+      Top = 234
+      Width = 868
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = 'Черные металлы'
+      ClientHeight = 30
+      ClientWidth = 868
+      Color = clNone
+      ParentColor = False
+      TabOrder = 7
+      object ed_rss_Chernye_metally: TEdit
+        Left = 568
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '0.25'
+      end
+      object ed_rso_Chernye_metally: TEdit
+        Left = 668
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0.35'
+      end
+      object ed_avs_Chernye_metally: TEdit
+        Left = 768
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.50'
+      end
+    end
+    object pl_Alljuminij: TPanel
+      Left = 3
+      Height = 30
+      Top = 267
+      Width = 868
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = 'Алюминий'
+      ClientHeight = 30
+      ClientWidth = 868
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 8
+      object ed_rss_Alljuminij: TEdit
+        Left = 568
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '0.35'
+      end
+      object ed_rso_Alljuminij: TEdit
+        Left = 668
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0.50'
+      end
+      object ed_avs_Alljuminij: TEdit
+        Left = 768
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.60'
+      end
+    end
+    object pl_Drevesina: TPanel
+      Left = 3
+      Height = 30
+      Top = 333
+      Width = 868
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = 'Древесина'
+      ClientHeight = 30
+      ClientWidth = 868
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 9
+      object ed_rss_Drevesina: TEdit
+        Left = 568
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '0.40'
+      end
+      object ed_rso_Drevesina: TEdit
+        Left = 668
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0.50'
+      end
+      object ed_avs_Drevesina: TEdit
+        Left = 768
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.70'
+      end
+    end
+    object pl_Tekstil: TPanel
+      Left = 3
+      Height = 30
+      Top = 366
+      Width = 868
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = 'Текстиль'
+      ClientHeight = 30
+      ClientWidth = 868
+      Color = clNone
+      ParentColor = False
+      TabOrder = 10
+      object ed_rss_Tekstil: TEdit
+        Left = 568
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '0.30'
+      end
+      object ed_rso_Tekstil: TEdit
+        Left = 668
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0.40'
+      end
+      object ed_avs_Tekstil: TEdit
+        Left = 768
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.60'
+      end
+    end
+    object pl_Inertnye_materialy: TPanel
+      Left = 3
+      Height = 30
+      Top = 399
+      Width = 868
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = 'Инертные материалы'
+      ClientHeight = 30
+      ClientWidth = 868
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 11
+      object ed_rss_Inertnye_materialy: TEdit
+        Left = 568
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '0.35'
+      end
+      object ed_rso_Inertnye_materialy: TEdit
+        Left = 668
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0.50'
+      end
+      object ed_avs_Inertnye_materialy: TEdit
+        Left = 768
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0'
+      end
+    end
+    object pl_Prochee: TPanel
+      Left = 3
+      Height = 30
+      Top = 432
+      Width = 868
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = 'Прочее'
+      ClientHeight = 30
+      ClientWidth = 868
+      Color = clNone
+      ParentColor = False
+      TabOrder = 12
+      object ed_rss_Prochee: TEdit
+        Left = 568
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '0'
+      end
+      object ed_rso_Prochee: TEdit
+        Left = 668
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0'
+      end
+      object ed_avs_Prochee: TEdit
+        Left = 768
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0'
+      end
+    end
+    object pl_Prochie_metally: TPanel
+      Left = 3
+      Height = 30
+      Top = 300
+      Width = 868
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = 'Прочие металлы'
+      ClientHeight = 30
+      ClientWidth = 868
+      Color = clNone
+      ParentColor = False
+      TabOrder = 13
+      object ed_rss_Prochie_metally: TEdit
+        Left = 568
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '0.25'
+      end
+      object ed_rso_Prochie_metally: TEdit
+        Left = 668
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0.35'
+      end
+      object ed_avs_Prochie_metally: TEdit
+        Left = 768
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.50'
+      end
+    end
+  end
+end

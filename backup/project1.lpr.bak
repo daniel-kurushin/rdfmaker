@@ -1,0 +1,21 @@
+program project1;
+
+{$mode objfpc}{$H+}
+
+uses
+  {$IFDEF UNIX}{$IFDEF UseCThreads}
+  cthreads,
+  {$ENDIF}{$ENDIF}
+  Interfaces, // this includes the LCL widgetset
+  Forms, dbflaz, tachartlazaruspkg, lazcontrols, mainwin, rdfdata, koeffform,
+  utils;
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TRDFForm, RDFForm);
+  Application.CreateForm(TRDFKoeffForm, RDFCoeffForm);
+  Application.Run;
+end.
+

@@ -1,0 +1,462 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <General>
+      <MainUnit Value="0"/>
+      <Title Value="Калькулятор RDF"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+        <UIAccess Value="True"/>
+      </XPManifest>
+      <Icon Value="0"/>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1" Active="Default">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="10">
+      <Item1>
+        <PackageName Value="laz_fpspreadsheet"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="FCL"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="SDFLaz"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="MemDSLaz"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="LazControls"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="TAChartLazarusPkg"/>
+      </Item6>
+      <Item7>
+        <PackageName Value="TurboPowerIPro"/>
+      </Item7>
+      <Item8>
+        <PackageName Value="SynEdit"/>
+      </Item8>
+      <Item9>
+        <PackageName Value="DBFLaz"/>
+        <MinVersion Minor="1" Release="1" Valid="True"/>
+      </Item9>
+      <Item10>
+        <PackageName Value="LCL"/>
+      </Item10>
+    </RequiredPackages>
+    <Units Count="21">
+      <Unit0>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="project1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="32" Y="18"/>
+        <UsageCount Value="246"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="mainwin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RDFForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="mainwin"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="360"/>
+        <CursorPos X="1" Y="387"/>
+        <UsageCount Value="246"/>
+        <Bookmarks Count="3">
+          <Item0 X="1" Y="1801" ID="0"/>
+          <Item1 X="1" Y="727" ID="1"/>
+          <Item2 X="1" Y="1909" ID="9"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="rdfdata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="rdfdata"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="29" Y="12"/>
+        <UsageCount Value="246"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="koeffform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RDFCoeffForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="koeffform"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="53"/>
+        <CursorPos X="73" Y="97"/>
+        <UsageCount Value="204"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="utils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="utils"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="6"/>
+        <CursorPos X="1" Y="6"/>
+        <UsageCount Value="204"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="melkfrac.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RDFMelkFracForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="melkfrac"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="206"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="otbor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RDFOtborForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="otbor"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="200"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="calcunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CalcForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="calcunit"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="108"/>
+        <CursorPos X="1" Y="34"/>
+        <UsageCount Value="200"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="defvalues.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fm_DefaultValues"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="defvalues"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="46" Y="6"/>
+        <UsageCount Value="233"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="/usr/share/fpcsrc/2.6.2/rtl/objpas/classes/classesh.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1718"/>
+        <CursorPos X="14" Y="1746"/>
+        <UsageCount Value="2"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="/usr/share/fpcsrc/2.6.2/rtl/objpas/sysutils/sysstrh.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="142"/>
+        <CursorPos X="10" Y="170"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="/usr/share/fpcsrc/2.6.2/rtl/objpas/sysutils/sysinth.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="54"/>
+        <CursorPos X="3" Y="82"/>
+        <UsageCount Value="2"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="/tmp/fpspreadsheet-1.4/fpspreadsheet.pas"/>
+        <UnitName Value="fpspreadsheet"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="131"/>
+        <CursorPos X="3" Y="158"/>
+        <UsageCount Value="3"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="../../../.lazarus/fpspreadsheet-1.4/fpsfunc.pas"/>
+        <UnitName Value="fpsfunc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="866"/>
+        <CursorPos X="78" Y="893"/>
+        <UsageCount Value="3"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="../../../.lazarus/fpspreadsheet-1.4/fpsexprparser.pas"/>
+        <UnitName Value="fpsExprParser"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="85"/>
+        <CursorPos X="1" Y="85"/>
+        <UsageCount Value="3"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="/usr/share/lazarus/1.0.12/components/lazutils/lazutf8.pas"/>
+        <UnitName Value="LazUTF8"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="10"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="3"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="../../../.lazarus/fpspreadsheet-1.4/xlscommon.pas"/>
+        <UnitName Value="xlscommon"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="2944"/>
+        <CursorPos X="3" Y="2975"/>
+        <UsageCount Value="3"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="../../../.lazarus/fpspreadsheet-1.4/fpsopendocument.pas"/>
+        <UnitName Value="fpsopendocument"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="3832"/>
+        <CursorPos X="3" Y="3863"/>
+        <UsageCount Value="3"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="../../../.lazarus/fpspreadsheet-1.4/xlsxooxml.pas"/>
+        <UnitName Value="xlsxooxml"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1936"/>
+        <CursorPos X="3" Y="1970"/>
+        <UsageCount Value="3"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="/usr/share/fpcsrc/2.6.2/rtl/objpas/sysutils/sysstr.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1001"/>
+        <CursorPos X="7" Y="1005"/>
+        <UsageCount Value="10"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="/usr/share/lazarus/1.0.12/lcl/include/control.inc"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="3218"/>
+        <CursorPos X="1" Y="3246"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit20>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="1930" Column="1" TopLine="1884"/>
+      </Position1>
+      <Position2>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="1931" Column="1" TopLine="1884"/>
+      </Position2>
+      <Position3>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="1932" Column="1" TopLine="1884"/>
+      </Position3>
+      <Position4>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="552" Column="1" TopLine="524"/>
+      </Position4>
+      <Position5>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="554" Column="1" TopLine="524"/>
+      </Position5>
+      <Position6>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="555" Column="1" TopLine="524"/>
+      </Position6>
+      <Position7>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="557" Column="1" TopLine="524"/>
+      </Position7>
+      <Position8>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="559" Column="1" TopLine="524"/>
+      </Position8>
+      <Position9>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="561" Column="1" TopLine="524"/>
+      </Position9>
+      <Position10>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="563" Column="1" TopLine="524"/>
+      </Position10>
+      <Position11>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="565" Column="1" TopLine="524"/>
+      </Position11>
+      <Position12>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="567" Column="1" TopLine="524"/>
+      </Position12>
+      <Position13>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="569" Column="1" TopLine="524"/>
+      </Position13>
+      <Position14>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="571" Column="1" TopLine="524"/>
+      </Position14>
+      <Position15>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="573" Column="1" TopLine="525"/>
+      </Position15>
+      <Position16>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="574" Column="1" TopLine="526"/>
+      </Position16>
+      <Position17>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="575" Column="1" TopLine="527"/>
+      </Position17>
+      <Position18>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="577" Column="1" TopLine="529"/>
+      </Position18>
+      <Position19>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="1912" Column="76" TopLine="1884"/>
+      </Position19>
+      <Position20>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="1034" Column="3" TopLine="1027"/>
+      </Position20>
+      <Position21>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="1023" Column="53" TopLine="1004"/>
+      </Position21>
+      <Position22>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="1036" Column="22" TopLine="1003"/>
+      </Position22>
+      <Position23>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="1044" Column="27" TopLine="1003"/>
+      </Position23>
+      <Position24>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="1055" Column="27" TopLine="1007"/>
+      </Position24>
+      <Position25>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="1996" Column="23" TopLine="1961"/>
+      </Position25>
+      <Position26>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="2076" Column="3" TopLine="2065"/>
+      </Position26>
+      <Position27>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="1032" Column="1" TopLine="1004"/>
+      </Position27>
+      <Position28>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="451" Column="7" TopLine="424"/>
+      </Position28>
+      <Position29>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="760" Column="2" TopLine="737"/>
+      </Position29>
+      <Position30>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="1468" Column="1" TopLine="1440"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="project1"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <CodeGeneration>
+      <SmartLinkUnit Value="True"/>
+      <Checks>
+        <IOChecks Value="True"/>
+        <RangeChecks Value="True"/>
+        <OverflowChecks Value="True"/>
+        <StackChecks Value="True"/>
+      </Checks>
+      <Optimizations>
+        <VariablesInRegisters Value="True"/>
+        <OptimizationLevel Value="3"/>
+      </Optimizations>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <UseValgrind Value="True"/>
+      </Debugging>
+      <LinkSmart Value="True"/>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="7">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+      <Item4>
+        <Name Value="EInterfaceCritical"/>
+      </Item4>
+      <Item5>
+        <Name Value="EAccessViolation"/>
+      </Item5>
+      <Item6>
+        <Name Value="EConvertError"/>
+      </Item6>
+      <Item7>
+        <Name Value="Unknown"/>
+      </Item7>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

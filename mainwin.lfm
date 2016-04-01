@@ -1,0 +1,4854 @@
+object RDFForm: TRDFForm
+  Left = 1355
+  Height = 2258
+  Top = 184
+  Width = 948
+  Caption = 'RDFForm'
+  ClientHeight = 2258
+  ClientWidth = 948
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poDesktopCenter
+  LCLVersion = '1.0.12.0'
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 21
+    Top = 2237
+    Width = 948
+    Panels = <>
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 2237
+    Top = 0
+    Width = 948
+    ActivePage = ts_Result
+    Align = alClient
+    TabIndex = 5
+    TabOrder = 1
+    object ts_tbo_morph: TTabSheet
+      Caption = 'Морфологический состав отходов %'
+      ClientHeight = 2206
+      ClientWidth = 944
+      object Panel1: TPanel
+        Left = 0
+        Height = 50
+        Top = 831
+        Width = 944
+        Align = alBottom
+        ClientHeight = 50
+        ClientWidth = 944
+        TabOrder = 0
+        object lb_ComponentyOtkhodov: TListBox
+          Left = 1
+          Height = 48
+          Top = 1
+          Width = 173
+          Align = alLeft
+          Items.Strings = (
+            'Bumaga_ofisnaja'
+            'Bumaga_gljancevaja'
+            'Bumaga_gazetnaja'
+            'Bumaga_prochaja'
+            'Karton'
+            'PJeT_butylki'
+            'Polipropilen'
+            'Polijetilen_plenki'
+            'Polijetilen_tara_i_izdelija'
+            'Polistirol'
+            'Polivinilhlorid'
+            'Plenki_prochie'
+            'Prochie_plastmassy_tverdye'
+            'Tetrapak'
+            'Organika'
+            'Steklo'
+            'Chernye_metally'
+            'Alljuminij'
+            'Prochie_metally'
+            'Drevesina'
+            'Tekstil'
+            'Inertnye_materialy'
+            'Prochie_komponenty'
+          )
+          ItemHeight = 0
+          ScrollWidth = 200
+          TabOrder = 0
+          TopIndex = -1
+          Visible = False
+        end
+        object lb_ToExport: TListBox
+          Left = 174
+          Height = 48
+          Top = 1
+          Width = 180
+          Align = alLeft
+          Items.Strings = (
+            'Bumaga'
+            'Bumaga_ofisnaja'
+            'Bumaga_gljancevaja'
+            'Bumaga_gazetnaja'
+            'Bumaga_prochaja'
+            'Karton'
+            'Polimery'
+            'PJeT_butylki'
+            'Polipropilen'
+            'Polijetilen_plenki'
+            'Polijetilen_tara_i_izdelija'
+            'Polistirol'
+            'Polivinilhlorid'
+            'Plenki_prochie'
+            'Prochie_plastmassy_tverdye'
+            'Tetrapak'
+            'Organika'
+            'Steklo'
+            'Chernye_metally'
+            'Cvetnye_metally'
+            'Alljuminij'
+            'Prochie_metally'
+            'Drevesina'
+            'Tekstil'
+            'Inertnye_materialy'
+            'Prochie_komponenty'
+            'Itogo'
+          )
+          ItemHeight = 0
+          ScrollWidth = 200
+          TabOrder = 1
+          TopIndex = -1
+          Visible = False
+        end
+        object lb_ToSum: TListBox
+          Left = 354
+          Height = 48
+          Top = 1
+          Width = 180
+          Align = alLeft
+          Items.Strings = (
+            'Bumaga_ofisnaja'
+            'Bumaga_gljancevaja'
+            'Bumaga_gazetnaja'
+            'Bumaga_prochaja'
+            'Karton'
+            'PJeT_butylki'
+            'Polipropilen'
+            'Polijetilen_plenki'
+            'Polijetilen_tara_i_izdelija'
+            'Polistirol'
+            'Polivinilhlorid'
+            'Plenki_prochie'
+            'Prochie_plastmassy_tverdye'
+            'Tetrapak'
+            'Organika'
+            'Steklo'
+            'Chernye_metally'
+            'Alljuminij'
+            'Prochie_metally'
+            'Drevesina'
+            'Tekstil'
+            'Inertnye_materialy'
+            'Prochie_komponenty'
+          )
+          ItemHeight = 0
+          ScrollWidth = 200
+          TabOrder = 2
+          TopIndex = -1
+          Visible = False
+        end
+      end
+      object sb_tbo_morph: TScrollBox
+        Left = 0
+        Height = 831
+        Top = 0
+        Width = 944
+        HorzScrollBar.Page = 944
+        VertScrollBar.Page = 831
+        Align = alClient
+        ClientHeight = 827
+        ClientWidth = 940
+        TabOrder = 1
+        object pl_tbo_morph_names: TPanel
+          Left = 0
+          Height = 829
+          Top = 0
+          Width = 400
+          Align = alLeft
+          ClientHeight = 825
+          ClientWidth = 396
+          TabOrder = 0
+          object lb_Bumaga: TPanel
+            Left = 1
+            Height = 30
+            Top = 1
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '1 Бумага'
+            ClientHeight = 26
+            ClientWidth = 394
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 0
+            object bt_Clac_BumagaSubs: TBitBtn
+              Tag = 2001
+              Left = 327
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇩ '
+              OnClick = calcSubs
+              TabOrder = 0
+            end
+            object bt_Clac_BumagaSumm: TBitBtn
+              Tag = 2001
+              Left = 362
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇧ '
+              OnClick = calcSumm
+              TabOrder = 1
+            end
+          end
+          object lb_Bumaga_ofisnaja: TPanel
+            Left = 1
+            Height = 30
+            Top = 31
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '1.1 Бумага офисная'
+            ClientHeight = 26
+            ClientWidth = 394
+            ParentColor = False
+            TabOrder = 1
+            object bt_Clac_Bumaga_ofisnaja: TBitBtn
+              Tag = 2002
+              Left = 362
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇨ '
+              OnClick = calcSub
+              TabOrder = 0
+            end
+          end
+          object lb_Bumaga_gljancevaja: TPanel
+            Left = 1
+            Height = 30
+            Top = 61
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '1.2 Бумага глянцевая (журналы)'
+            ClientHeight = 26
+            ClientWidth = 394
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 2
+            object bt_Clac_Bumaga_gljancevaja: TBitBtn
+              Tag = 2003
+              Left = 362
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇨ '
+              OnClick = calcSub
+              TabOrder = 0
+            end
+          end
+          object lb_Bumaga_gazetnaja: TPanel
+            Left = 1
+            Height = 30
+            Top = 91
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '1.3 Бумага газетная'
+            ClientHeight = 26
+            ClientWidth = 394
+            ParentColor = False
+            TabOrder = 3
+            object bt_Clac_Bumaga_gazetnaja: TBitBtn
+              Tag = 2004
+              Left = 362
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇨ '
+              OnClick = calcSub
+              TabOrder = 0
+            end
+          end
+          object lb_Bumaga_prochaja: TPanel
+            Left = 1
+            Height = 30
+            Top = 121
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '1.4 Бумага прочая'
+            ClientHeight = 26
+            ClientWidth = 394
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 4
+            object bt_Clac_Bumaga_prochaja: TBitBtn
+              Tag = 2005
+              Left = 362
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇨ '
+              OnClick = calcSub
+              TabOrder = 0
+            end
+          end
+          object lb_Karton: TPanel
+            Left = 1
+            Height = 30
+            Top = 151
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '2 Картон'
+            ParentColor = False
+            TabOrder = 5
+          end
+          object lb_Polimery: TPanel
+            Left = 1
+            Height = 30
+            Top = 181
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '3 Полимеры'
+            ClientHeight = 26
+            ClientWidth = 394
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 6
+            object bt_Clac_PolimerySubs: TBitBtn
+              Tag = 2007
+              Left = 327
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇩ '
+              OnClick = calcSubs
+              TabOrder = 0
+            end
+            object bt_Clac_PolimerySumm: TBitBtn
+              Tag = 2007
+              Left = 362
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇧ '
+              OnClick = calcSumm
+              TabOrder = 1
+            end
+          end
+          object lb_PJeT_butylki: TPanel
+            Left = 1
+            Height = 30
+            Top = 211
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '3.1 ПЭТ бутылки'
+            ClientHeight = 26
+            ClientWidth = 394
+            ParentColor = False
+            TabOrder = 7
+            object bt_Clac_PJeT_butylki: TBitBtn
+              Tag = 2008
+              Left = 362
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇨ '
+              OnClick = calcSub
+              TabOrder = 0
+            end
+          end
+          object lb_Polipropilen: TPanel
+            Left = 1
+            Height = 30
+            Top = 241
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '3.2 Полипропилен'
+            ClientHeight = 26
+            ClientWidth = 394
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 8
+            object bt_Clac_Polipropilen: TBitBtn
+              Tag = 2009
+              Left = 362
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇨ '
+              OnClick = calcSub
+              TabOrder = 0
+            end
+          end
+          object lb_Polijetilen_plenki: TPanel
+            Left = 1
+            Height = 30
+            Top = 271
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '3.3 Полиэтилен пленки (ПЭНД)'
+            ClientHeight = 26
+            ClientWidth = 394
+            ParentColor = False
+            TabOrder = 9
+            object bt_Clac_Polijetilen_plenki: TBitBtn
+              Tag = 2010
+              Left = 362
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇨ '
+              OnClick = calcSub
+              TabOrder = 0
+            end
+          end
+          object lb_Polijetilen_tara_i_izdelija: TPanel
+            Left = 1
+            Height = 30
+            Top = 301
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '3.4 Полиэтилен тара и изделия (ПЭВД)'
+            ClientHeight = 26
+            ClientWidth = 394
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 10
+            object bt_Clac_Polijetilen_tara_i_izdelija: TBitBtn
+              Tag = 2011
+              Left = 362
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇨ '
+              OnClick = calcSub
+              TabOrder = 0
+            end
+          end
+          object lb_Polistirol: TPanel
+            Left = 1
+            Height = 30
+            Top = 331
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '3.5 Полистирол'
+            ClientHeight = 26
+            ClientWidth = 394
+            ParentColor = False
+            TabOrder = 11
+            object bt_Clac_Polistirol: TBitBtn
+              Tag = 2012
+              Left = 362
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇨ '
+              OnClick = calcSub
+              TabOrder = 0
+            end
+          end
+          object lb_Polivinilhlorid: TPanel
+            Left = 1
+            Height = 30
+            Top = 361
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '3.6 Поливинилхлорид (ПВХ)'
+            ClientHeight = 26
+            ClientWidth = 394
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 12
+            object bt_Clac_Polivinilhlorid: TBitBtn
+              Tag = 2013
+              Left = 362
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇨ '
+              OnClick = calcSub
+              TabOrder = 0
+            end
+          end
+          object lb_Plenki_prochie: TPanel
+            Left = 1
+            Height = 30
+            Top = 391
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '3.7 Пленки прочие'
+            ClientHeight = 26
+            ClientWidth = 394
+            ParentColor = False
+            TabOrder = 13
+            object bt_Clac_Plenki_prochie: TBitBtn
+              Tag = 2014
+              Left = 362
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇨ '
+              OnClick = calcSub
+              TabOrder = 0
+            end
+          end
+          object lb_Prochie_plastmassy_tverdye: TPanel
+            Left = 1
+            Height = 30
+            Top = 421
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '3.8 Прочие пластмассы твердые'
+            ClientHeight = 26
+            ClientWidth = 394
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 14
+            object bt_Clac_Prochie_plastmassy_tverdye: TBitBtn
+              Tag = 2015
+              Left = 362
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇨ '
+              OnClick = calcSub
+              TabOrder = 0
+            end
+          end
+          object lb_Tetrapak: TPanel
+            Left = 1
+            Height = 30
+            Top = 451
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '4 Тетрапак'
+            ParentColor = False
+            TabOrder = 15
+          end
+          object lb_Organika: TPanel
+            Left = 1
+            Height = 30
+            Top = 481
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '5 Органика'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 16
+          end
+          object lb_Steklo: TPanel
+            Left = 1
+            Height = 30
+            Top = 511
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '6 Стекло'
+            ParentColor = False
+            TabOrder = 17
+          end
+          object lb_Chernye_metally: TPanel
+            Left = 1
+            Height = 30
+            Top = 541
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '7 Черные металлы'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 18
+          end
+          object lb_Cvetnye_metally: TPanel
+            Left = 1
+            Height = 30
+            Top = 571
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '8 Цветные металлы'
+            ClientHeight = 26
+            ClientWidth = 394
+            ParentColor = False
+            TabOrder = 19
+            object bt_Clac_PolimerySubs1: TBitBtn
+              Tag = 2020
+              Left = 327
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇩ '
+              OnClick = calcSubs
+              TabOrder = 0
+            end
+            object bt_Clac_PolimerySumm1: TBitBtn
+              Tag = 2020
+              Left = 362
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇧ '
+              OnClick = calcSumm
+              TabOrder = 1
+            end
+          end
+          object lb_Alljuminij: TPanel
+            Left = 1
+            Height = 30
+            Top = 601
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '8.1 Аллюминий'
+            ClientHeight = 26
+            ClientWidth = 394
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 20
+            object bt_Clac_Plenki_prochie1: TBitBtn
+              Tag = 2021
+              Left = 362
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇨ '
+              OnClick = calcSub
+              TabOrder = 0
+            end
+          end
+          object lb_Prochie_metally: TPanel
+            Left = 1
+            Height = 30
+            Top = 631
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '8.2 Прочие металлы'
+            ClientHeight = 26
+            ClientWidth = 394
+            ParentColor = False
+            TabOrder = 21
+            object bt_Clac_Plenki_prochie2: TBitBtn
+              Tag = 2022
+              Left = 362
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇨ '
+              OnClick = calcSub
+              TabOrder = 0
+            end
+          end
+          object lb_Drevesina: TPanel
+            Left = 1
+            Height = 30
+            Top = 661
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '9 Древесина'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 22
+          end
+          object lb_Tekstil: TPanel
+            Left = 1
+            Height = 30
+            Top = 691
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '10 Текстиль'
+            ParentColor = False
+            TabOrder = 23
+          end
+          object lb_Inertnye_materialy: TPanel
+            Left = 1
+            Height = 30
+            Top = 721
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '11 Инертные материалы (камни, штукатурка, бетонные изделия и пр.)'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 24
+          end
+          object lb_Prochie_komponenty: TPanel
+            Left = 1
+            Height = 30
+            Top = 751
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = '12 Прочие компоненты'
+            ParentColor = False
+            TabOrder = 25
+          end
+          object lb_Itogo: TPanel
+            Left = 1
+            Height = 30
+            Top = 781
+            Width = 398
+            Align = alTop
+            Alignment = taLeftJustify
+            Caption = 'Итого'
+            ClientHeight = 26
+            ClientWidth = 394
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 26
+            object bt_Clac_Prochie_plastmassy_tverdye1: TBitBtn
+              Left = 362
+              Height = 26
+              Top = 2
+              Width = 34
+              Align = alRight
+              AutoSize = True
+              BorderSpacing.Around = 1
+              Caption = ' ⇨ '
+              OnClick = calcItog
+              TabOrder = 0
+            end
+          end
+        end
+        object pl_tbo_morph_values: TPanel
+          Left = 400
+          Height = 829
+          Top = 0
+          Width = 542
+          Align = alClient
+          ClientHeight = 825
+          ClientWidth = 538
+          TabOrder = 1
+          object ed_Bumaga: TEdit
+            Tag = 1001
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 1
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clSilver
+            MaxLength = 12
+            OnExit = checkFloatFormat
+            TabOrder = 0
+            Text = '0.000'
+          end
+          object ed_Bumaga_ofisnaja: TEdit
+            Tag = 1002
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 31
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clNone
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 1
+            Text = '0.000'
+          end
+          object ed_Bumaga_gljancevaja: TEdit
+            Tag = 1003
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 61
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clSilver
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 2
+            Text = '0.000'
+          end
+          object ed_Bumaga_gazetnaja: TEdit
+            Tag = 1004
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 91
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clNone
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 3
+            Text = '0.000'
+          end
+          object ed_Bumaga_prochaja: TEdit
+            Tag = 1005
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 121
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clSilver
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 4
+            Text = '0.000'
+          end
+          object ed_Karton: TEdit
+            Tag = 1006
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 151
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clNone
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 5
+            Text = '0.000'
+          end
+          object ed_Polimery: TEdit
+            Tag = 1007
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 181
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clSilver
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 6
+            Text = '0.000'
+          end
+          object ed_PJeT_butylki: TEdit
+            Tag = 1008
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 211
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clNone
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 7
+            Text = '0.000'
+          end
+          object ed_Polipropilen: TEdit
+            Tag = 1009
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 241
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clSilver
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 8
+            Text = '0.000'
+          end
+          object ed_Polijetilen_plenki: TEdit
+            Tag = 1010
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 271
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clNone
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 9
+            Text = '0.000'
+          end
+          object ed_Polijetilen_tara_i_izdelija: TEdit
+            Tag = 1011
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 301
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clSilver
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 10
+            Text = '0.000'
+          end
+          object ed_Polistirol: TEdit
+            Tag = 1012
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 331
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clNone
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 11
+            Text = '0.000'
+          end
+          object ed_Polivinilhlorid: TEdit
+            Tag = 1013
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 361
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clSilver
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 12
+            Text = '0.000'
+          end
+          object ed_Plenki_prochie: TEdit
+            Tag = 1014
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 391
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clNone
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 13
+            Text = '0.000'
+          end
+          object ed_Prochie_plastmassy_tverdye: TEdit
+            Tag = 1015
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 421
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clSilver
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 14
+            Text = '0.000'
+          end
+          object ed_Tetrapak: TEdit
+            Tag = 1016
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 451
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clNone
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 15
+            Text = '0.000'
+          end
+          object ed_Organika: TEdit
+            Tag = 1017
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 481
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clSilver
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 16
+            Text = '0.000'
+          end
+          object ed_Steklo: TEdit
+            Tag = 1018
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 511
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clNone
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 17
+            Text = '0.000'
+          end
+          object ed_Chernye_metally: TEdit
+            Tag = 1019
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 541
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clSilver
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 18
+            Text = '0.000'
+          end
+          object ed_Cvetnye_metally: TEdit
+            Tag = 1020
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 571
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clNone
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 19
+            Text = '0.000'
+          end
+          object ed_Alljuminij: TEdit
+            Tag = 1021
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 601
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clSilver
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 20
+            Text = '0.000'
+          end
+          object ed_Prochie_metally: TEdit
+            Tag = 1022
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 631
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clNone
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 21
+            Text = '0.000'
+          end
+          object ed_Drevesina: TEdit
+            Tag = 1023
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 661
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clSilver
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 22
+            Text = '0.000'
+          end
+          object ed_Tekstil: TEdit
+            Tag = 1024
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 691
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clNone
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 23
+            Text = '0.000'
+          end
+          object ed_Inertnye_materialy: TEdit
+            Tag = 1025
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 721
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clSilver
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 24
+            Text = '0.000'
+          end
+          object ed_Prochie_komponenty: TEdit
+            Tag = 1026
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 751
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clNone
+            MaxLength = 6
+            OnExit = checkFloatFormat
+            TabOrder = 25
+            Text = '0.000'
+          end
+          object ed_Itogo: TEdit
+            Tag = 1025
+            Left = 1
+            Height = 30
+            Hint = '0'
+            Top = 781
+            Width = 540
+            Align = alTop
+            AutoSize = False
+            Color = clSilver
+            MaxLength = 6
+            ReadOnly = True
+            TabOrder = 26
+            Text = '0.000'
+          end
+        end
+      end
+    end
+    object ts_Melk_Frac: TTabSheet
+      Caption = 'Отсев мелких фракций'
+      ClientHeight = 2206
+      ClientWidth = 944
+      object cb_Melk_Frac: TCheckBox
+        Left = 5
+        Height = 24
+        Top = 5
+        Width = 934
+        Align = alTop
+        BorderSpacing.Around = 5
+        Caption = 'Существует ли при выбранном методе сортировки отсев мелкой фракции?'
+        OnChange = cb_Melk_FracChange
+        TabOrder = 0
+      end
+      object Panel3: TPanel
+        Left = 0
+        Height = 50
+        Top = 831
+        Width = 944
+        Align = alBottom
+        TabOrder = 1
+      end
+      object rg_Melk_Frac: TRadioGroup
+        Left = 0
+        Height = 105
+        Top = 34
+        Width = 944
+        Align = alTop
+        AutoFill = False
+        Caption = 'Диаметр мелкой фракции:'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.TopBottomSpacing = 6
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 86
+        ClientWidth = 940
+        Enabled = False
+        Items.Strings = (
+          '50 mm'
+          '75 mm'
+          '100 mm'
+        )
+        OnClick = FillMelkFracPanels
+        TabOrder = 2
+      end
+      object sb_Melk_Frak: TScrollBox
+        Left = 0
+        Height = 692
+        Top = 139
+        Width = 944
+        HorzScrollBar.Page = 926
+        VertScrollBar.Page = 690
+        Align = alClient
+        ClientHeight = 690
+        ClientWidth = 926
+        Enabled = False
+        TabOrder = 3
+        object pl_Melk_Frak_names: TPanel
+          Left = 0
+          Height = 863
+          Top = 0
+          Width = 400
+          Align = alLeft
+          ClientHeight = 863
+          ClientWidth = 400
+          TabOrder = 0
+          object pl_Bumaga: TPanel
+            Left = 4
+            Height = 30
+            Top = 4
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '1 Бумага'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 0
+          end
+          object pl_Bumaga_ofisnaja: TPanel
+            Left = 4
+            Height = 30
+            Top = 37
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '1.1 Бумага офисная'
+            TabOrder = 1
+          end
+          object pl_Bumaga_gljancevaja: TPanel
+            Left = 4
+            Height = 30
+            Top = 70
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '1.2 Бумага глянцевая (журналы)'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 2
+          end
+          object pl_Bumaga_gazetnaja: TPanel
+            Left = 4
+            Height = 30
+            Top = 103
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '1.3 Бумага газетная'
+            TabOrder = 3
+          end
+          object pl_Bumaga_prochaja: TPanel
+            Left = 4
+            Height = 30
+            Top = 136
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '1.4 Бумага прочая'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 4
+          end
+          object pl_Karton: TPanel
+            Left = 4
+            Height = 30
+            Top = 169
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '2 Картон'
+            TabOrder = 5
+          end
+          object pl_Polimery: TPanel
+            Left = 4
+            Height = 30
+            Top = 202
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '3 Полимеры'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 6
+          end
+          object pl_PJeT_butylki: TPanel
+            Left = 4
+            Height = 30
+            Top = 235
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '3.1 ПЭТ бутылки'
+            TabOrder = 7
+          end
+          object pl_Polipropilen: TPanel
+            Left = 4
+            Height = 30
+            Top = 268
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '3.2 Полипропилен'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 8
+          end
+          object pl_Polijetilen_plenki: TPanel
+            Left = 4
+            Height = 30
+            Top = 301
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '3.3 Полиэтилен пленки (ПЭНД)'
+            TabOrder = 9
+          end
+          object pl_Polijetilen_tara_i_izdelija: TPanel
+            Left = 4
+            Height = 30
+            Top = 334
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '3.4 Полиэтилен тара и изделия (ПЭВД)'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 10
+          end
+          object pl_Polistirol: TPanel
+            Left = 4
+            Height = 30
+            Top = 367
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '3.5 Полистирол'
+            TabOrder = 11
+          end
+          object pl_Polivinilhlorid: TPanel
+            Left = 4
+            Height = 30
+            Top = 400
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '3.6 Поливинилхлорид'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 12
+          end
+          object pl_Plenki_prochie: TPanel
+            Left = 4
+            Height = 30
+            Top = 433
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '3.7 Пленки прочие'
+            TabOrder = 13
+          end
+          object pl_Prochie_plastmassy_tverdye: TPanel
+            Left = 4
+            Height = 30
+            Top = 466
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '3.8 Прочие пластмассы твердые'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 14
+          end
+          object pl_Tetrapak: TPanel
+            Left = 4
+            Height = 30
+            Top = 499
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '4 Тетрапак'
+            TabOrder = 15
+          end
+          object pl_Organika: TPanel
+            Left = 4
+            Height = 30
+            Top = 532
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '5 Органика'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 16
+          end
+          object pl_Steklo: TPanel
+            Left = 4
+            Height = 30
+            Top = 565
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '6 Стекло'
+            TabOrder = 17
+          end
+          object pl_Chernye_metally: TPanel
+            Left = 4
+            Height = 30
+            Top = 598
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '7 Черные металлы'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 18
+          end
+          object pl_Cvetnye_metally: TPanel
+            Left = 4
+            Height = 30
+            Top = 631
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '8 Цветные металлы'
+            TabOrder = 19
+          end
+          object pl_Alljuminij: TPanel
+            Left = 4
+            Height = 30
+            Top = 664
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '8.1 Аллюминий'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 20
+          end
+          object pl_Prochie_metally: TPanel
+            Left = 4
+            Height = 30
+            Top = 697
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '8.2 Прочие металлы'
+            TabOrder = 21
+          end
+          object pl_Drevesina: TPanel
+            Left = 4
+            Height = 30
+            Top = 730
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '9 Древесина'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 22
+          end
+          object pl_Tekstil: TPanel
+            Left = 4
+            Height = 30
+            Top = 763
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '10 Текстиль'
+            TabOrder = 23
+          end
+          object pl_Inertnye_materialy: TPanel
+            Left = 4
+            Height = 30
+            Top = 796
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '11 Инертные материалы (камни, штукатурка, бетонные изделия и пр.)'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 24
+          end
+          object pl_Prochie_komponenty: TPanel
+            Left = 4
+            Height = 30
+            Top = 829
+            Width = 392
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '12 Прочие компоненты'
+            TabOrder = 25
+          end
+        end
+        object pl_Melk_Frak_values: TPanel
+          Left = 400
+          Height = 863
+          Top = 0
+          Width = 526
+          Align = alClient
+          ClientHeight = 863
+          ClientWidth = 526
+          TabOrder = 1
+          object pl_Bumaga_value: TPanel
+            Left = 4
+            Height = 30
+            Top = 4
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 0
+          end
+          object pl_Bumaga_ofisnaja_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 37
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            TabOrder = 1
+          end
+          object pl_Bumaga_gljancevaja_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 70
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 2
+          end
+          object pl_Bumaga_gazetnaja_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 103
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            TabOrder = 3
+          end
+          object pl_Bumaga_prochaja_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 136
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 4
+          end
+          object pl_Karton_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 169
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            TabOrder = 5
+          end
+          object pl_Polimery_value: TPanel
+            Left = 4
+            Height = 30
+            Top = 202
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 6
+          end
+          object pl_PJeT_butylki_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 235
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            TabOrder = 7
+          end
+          object pl_Polipropilen_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 268
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 8
+          end
+          object pl_Polijetilen_plenki_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 301
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            TabOrder = 9
+          end
+          object pl_Polijetilen_tara_i_izdelija_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 334
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 10
+          end
+          object pl_Polistirol_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 367
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            TabOrder = 11
+          end
+          object pl_Polivinilhlorid_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 400
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 12
+          end
+          object pl_Plenki_prochie_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 433
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            TabOrder = 13
+          end
+          object pl_Prochie_plastmassy_tverdye_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 466
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 14
+          end
+          object pl_Tetrapak_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 499
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            TabOrder = 15
+          end
+          object pl_Organika_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 532
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 16
+          end
+          object pl_Steklo_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 565
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            TabOrder = 17
+          end
+          object pl_Chernye_metally_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 598
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 18
+          end
+          object pl_Cvetnye_metally_value: TPanel
+            Left = 4
+            Height = 30
+            Top = 631
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            TabOrder = 19
+          end
+          object pl_Alljuminij_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 664
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 20
+          end
+          object pl_Prochie_metally_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 697
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            TabOrder = 21
+          end
+          object pl_Drevesina_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 730
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 22
+          end
+          object pl_Tekstil_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 763
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            TabOrder = 23
+          end
+          object pl_Inertnye_materialy_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 796
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 24
+          end
+          object pl_Prochie_komponenty_value: TPanel
+            Tag = 1000
+            Left = 4
+            Height = 30
+            Top = 829
+            Width = 518
+            Align = alTop
+            Alignment = taLeftJustify
+            BorderSpacing.Around = 3
+            BorderSpacing.InnerBorder = 2
+            BevelOuter = bvNone
+            Caption = '0.000'
+            TabOrder = 25
+          end
+        end
+      end
+    end
+    object ts_Procent_Otbora: TTabSheet
+      Caption = '% отбора'
+      ClientHeight = 2206
+      ClientWidth = 944
+      OnShow = SetOtborPercentAll
+      object Panel4: TPanel
+        Left = 0
+        Height = 50
+        Top = 2156
+        Width = 944
+        Align = alBottom
+        ClientHeight = 50
+        ClientWidth = 944
+        TabOrder = 0
+        object cb_allow_fakt_m_rek: TCheckBox
+          Left = 535
+          Height = 28
+          Top = 11
+          Width = 398
+          Align = alRight
+          BorderSpacing.Around = 10
+          Caption = 'Запретить фактический % отбора > рекомендуемого'
+          TabOrder = 0
+        end
+      end
+      object ScrollBox2: TScrollBox
+        Left = 0
+        Height = 2156
+        Top = 0
+        Width = 944
+        HorzScrollBar.Page = 942
+        VertScrollBar.Page = 2154
+        Align = alClient
+        ClientHeight = 2154
+        ClientWidth = 942
+        TabOrder = 1
+        object pl_A_otbor: TPanel
+          Left = 0
+          Height = 30
+          Top = 0
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = 'Наименование фракции'
+          ClientHeight = 30
+          ClientWidth = 942
+          TabOrder = 0
+          object pl_B_otbor: TPanel
+            Left = 701
+            Height = 28
+            Top = 1
+            Width = 120
+            Align = alRight
+            Caption = 'Рек. % отб.'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 0
+          end
+          object pl_B_otbor1: TPanel
+            Left = 301
+            Height = 28
+            Top = 1
+            Width = 400
+            Align = alRight
+            Caption = 'Способ сортировки'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 1
+          end
+          object pl_B_otbor2: TPanel
+            Left = 821
+            Height = 28
+            Top = 1
+            Width = 120
+            Align = alRight
+            Caption = 'Факт. % отб.'
+            Color = clSilver
+            ParentColor = False
+            TabOrder = 2
+          end
+        end
+        object pl_Bumaga_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 30
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '1 Бумага   '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 1
+          object rg_Bumaga_otbor: TRadioGroup
+            Tag = 1
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Bumaga'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+            Visible = False
+          end
+          object ed_Bumaga_otbor: TEdit
+            Tag = 1
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+            Visible = False
+          end
+          object ed_def_Bumaga_otbor: TEdit
+            Tag = 1
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+            Visible = False
+          end
+        end
+        object pl_Bumaga_ofisnaja_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 110
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '1.1 Бумага офисная'
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 2
+          object rg_Bumaga_ofisnaja_otbor: TRadioGroup
+            Tag = 2
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Bumaga'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Bumaga_ofisnaja_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Bumaga_ofisnaja_otbor: TEdit
+            Tag = 2
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Bumaga_gljancevaja_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 190
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '1.2 Бумага глянцевая (журналы) '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 3
+          object rg_Bumaga_gljancevaja_otbor: TRadioGroup
+            Tag = 3
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Bumaga'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Bumaga_gljancevaja_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Bumaga_gljancevaja_otbor: TEdit
+            Tag = 3
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Bumaga_gazetnaja_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 270
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '1.3 Бумага газетная  '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 4
+          object rg_Bumaga_gazetnaja_otbor: TRadioGroup
+            Tag = 4
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Bumaga'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Bumaga_gazetnaja_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Bumaga_gazetnaja_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Bumaga_prochaja_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 350
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '1.4 Бумага прочая  '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 5
+          object rg_Bumaga_prochaja_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Bumaga'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Bumaga_prochaja_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Bumaga_prochaja_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Karton_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 430
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '2 Картон   '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 6
+          object rg_Karton_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Karton'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Karton_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Karton_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Polimery_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 510
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '3 Полимеры   '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 7
+          object rg_Polimery_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Polimery'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+            Visible = False
+          end
+          object ed_Polimery_otbor: TEdit
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+            Visible = False
+          end
+          object ed_def_Polimery_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+            Visible = False
+          end
+        end
+        object pl_PJeT_butylki_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 590
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '3.1 ПЭТ бутылки  '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 8
+          object rg_PJeT_butylki_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Polimery'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_PJeT_butylki_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_PJeT_butylki_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Polipropilen_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 670
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '3.2 Полипропилен   '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 9
+          object rg_Polipropilen_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Polimery'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Polipropilen_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Polipropilen_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Polijetilen_plenki_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 750
+          Width = 942
+          HelpType = htKeyword
+          HelpKeyword = 'Polimery'
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '3.3 Полиэтилен пленки (ПЭНД) '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 10
+          object rg_Polijetilen_plenki_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Polimery'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Polijetilen_plenki_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Polijetilen_plenki_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Polijetilen_tara_i_izdelija_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 830
+          Width = 942
+          HelpType = htKeyword
+          HelpKeyword = 'Polimery'
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '3.4 Полиэтилен тара и изделия'
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 11
+          object rg_Polijetilen_tara_i_izdelija_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Polimery'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Polijetilen_tara_i_izdelija_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Polijetilen_tara_i_izdelija_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Polistirol_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 910
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '3.5 Полистирол   '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 12
+          object rg_Polistirol_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Polimery'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Polistirol_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Polistirol_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Polivinilhlorid_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 990
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '3.6 Поливинилхлорид   '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 13
+          object rg_Polivinilhlorid_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Polimery'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Polivinilhlorid_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Polivinilhlorid_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Plenki_prochie_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 1070
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '3.7 Пленки прочие  '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 14
+          object rg_Plenki_prochie_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Polimery'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Plenki_prochie_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Plenki_prochie_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Prochie_plastmassy_tverdye_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 1150
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '3.8 Прочие пластмассы твердые '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 15
+          object rg_Prochie_plastmassy_tverdye_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Polimery'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Prochie_plastmassy_tverdye_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Prochie_plastmassy_tverdye_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Tetrapak_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 1230
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '4 Тетрапак   '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 16
+          object rg_Tetrapak_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Tetrapak'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Tetrapak_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Tetrapak_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Organika_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 1310
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '5 Органика   '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 17
+          object rg_Organika_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Organika'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Organika_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Organika_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Steklo_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 1390
+          Width = 942
+          HelpType = htKeyword
+          HelpKeyword = 'Steklo'
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '6 Стекло   '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 18
+          object rg_Steklo_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Steklo'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Steklo_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Steklo_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Chernye_metally_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 1470
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '7 Черные металлы  '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 19
+          object rg_Chernye_metally_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Chernye_metally'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Chernye_metally_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Chernye_metally_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Cvetnye_metally_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 1550
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '8 Цветные металлы  '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 20
+          object rg_Cvetnye_metally_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+            Visible = False
+          end
+          object ed_Cvetnye_metally_otbor: TEdit
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+            Visible = False
+          end
+          object ed_def_Cvetnye_metally_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+            Visible = False
+          end
+        end
+        object pl_Alljuminij_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 1630
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '8.1 Аллюминий    '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 21
+          object rg_Alljuminij_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Alljuminij'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Alljuminij_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Alljuminij_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Prochie_metally_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 1710
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '8.2 Прочие металлы  '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 22
+          object rg_Prochie_metally_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Prochie_metally'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Prochie_metally_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Prochie_metally_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Drevesina_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 1790
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '9 Древесина   '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 23
+          object rg_Drevesina_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Drevesina'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Drevesina_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Drevesina_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Tekstil_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 1870
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '10 Текстиль   '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 24
+          object rg_Tekstil_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Tekstil'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Tekstil_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Tekstil_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Inertnye_materialy_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 1950
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '11 Инертные материалы (камни, штукатурка,'
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 25
+          object rg_Inertnye_materialy_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Inertnye_materialy'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Inertnye_materialy_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Inertnye_materialy_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+        object pl_Prochie_komponenty_otbor: TPanel
+          Left = 0
+          Height = 80
+          Top = 2030
+          Width = 942
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.InnerBorder = 2
+          Caption = '12 Прочие компоненты  '
+          ClientHeight = 80
+          ClientWidth = 942
+          TabOrder = 26
+          object rg_Prochie_komponenty_otbor: TRadioGroup
+            Left = 301
+            Height = 78
+            Hint = 'P/C — ручная сортировка'
+            Top = 1
+            Width = 400
+            HelpType = htKeyword
+            HelpKeyword = 'Prochee'
+            Align = alRight
+            AutoFill = True
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 74
+            ClientWidth = 396
+            ItemIndex = 0
+            Items.Strings = (
+              'Р/C смешанных отходов'
+              'Р/C раздельно собранных отходов'
+              'Автоматическая сортировка'
+            )
+            OnClick = SetOtborPercent
+            OnEnter = SetOtborPercent
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object ed_Prochie_komponenty_otbor: TEdit
+            Tag = 2000
+            Left = 821
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            OnExit = checkOtborPerc
+            TabOrder = 1
+          end
+          object ed_def_Prochie_komponenty_otbor: TEdit
+            Left = 701
+            Height = 28
+            Top = 26
+            Width = 120
+            Align = alRight
+            BorderSpacing.Top = 25
+            BorderSpacing.Bottom = 25
+            Color = clBackground
+            ReadOnly = True
+            TabOrder = 2
+          end
+        end
+      end
+    end
+    object ts_RDF_Dop_Podg: TTabSheet
+      Caption = 'Доп. подготовка RDF'
+      ClientHeight = 2206
+      ClientWidth = 944
+      object Panel5: TPanel
+        Left = 0
+        Height = 50
+        Top = 2156
+        Width = 944
+        Align = alBottom
+        TabOrder = 0
+      end
+      object ScrollBox3: TScrollBox
+        Left = 0
+        Height = 2156
+        Top = 0
+        Width = 944
+        HorzScrollBar.Page = 942
+        VertScrollBar.Page = 2154
+        Align = alClient
+        ClientHeight = 2154
+        ClientWidth = 942
+        TabOrder = 1
+        object Panel7: TPanel
+          Left = 0
+          Height = 2154
+          Top = 0
+          Width = 772
+          Align = alClient
+          AutoSize = True
+          Caption = ' '
+          ClientHeight = 2154
+          ClientWidth = 772
+          TabOrder = 0
+          object rg_RDF_Dop_Podg: TCheckGroup
+            Left = 3
+            Height = 425
+            Hint = 'Дополнительная подготовка RDF:'
+            Top = 3
+            Width = 766
+            Align = alTop
+            AutoFill = True
+            BorderSpacing.Around = 2
+            Caption = 'Существует ли дополнительная подготовка RDF?'
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 406
+            ClientWidth = 762
+            Items.Strings = (
+              'Бумага офисная'
+              'Бумага глянцевая'
+              'Бумага газетная'
+              'Бумага прочая'
+              'Картон'
+              'ПЭТ бутылки'
+              'Полипропилен'
+              'Полиэтилен пленки (ПЭНД)'
+              'Полиэтилен тара и изделия (ПЭВД)'
+              'Полистирол'
+              'Пленки прочие'
+              'Прочие пластмассы твердые'
+              'Тетрапак'
+              'Древесина'
+              'Текстиль'
+            )
+            OnClick = SetFValue
+            OnItemClick = SetFValueByItem
+            TabOrder = 0
+            Data = {
+              0F000000020202020202020202020202020202
+            }
+          end
+        end
+        object Panel8: TPanel
+          Left = 772
+          Height = 2154
+          Top = 0
+          Width = 170
+          Align = alRight
+          Caption = ' '
+          ClientHeight = 2154
+          ClientWidth = 170
+          TabOrder = 1
+          object GroupBox1: TGroupBox
+            Left = 1
+            Height = 424
+            Top = 1
+            Width = 168
+            Align = alTop
+            AutoSize = True
+            Caption = 'F=?'
+            ClientHeight = 405
+            ClientWidth = 164
+            TabOrder = 0
+            object ed_F_Bumaga_ofisnaja: TEdit
+              Tag = 10000
+              Left = 0
+              Height = 27
+              Top = 0
+              Width = 164
+              Align = alTop
+              OnExit = check_095_F
+              TabOrder = 0
+              Text = '0.00'
+            end
+            object ed_F_Bumaga_gljancevaja: TEdit
+              Tag = 10001
+              Left = 0
+              Height = 27
+              Top = 27
+              Width = 164
+              Align = alTop
+              OnExit = check_095_F
+              TabOrder = 1
+              Text = '0.00'
+            end
+            object ed_F_Bumaga_gazetnaja: TEdit
+              Tag = 10002
+              Left = 0
+              Height = 27
+              Top = 54
+              Width = 164
+              Align = alTop
+              OnExit = check_095_F
+              TabOrder = 2
+              Text = '0.00'
+            end
+            object ed_F_Bumaga_prochaja: TEdit
+              Tag = 10003
+              Left = 0
+              Height = 27
+              Top = 81
+              Width = 164
+              Align = alTop
+              OnExit = check_095_F
+              TabOrder = 3
+              Text = '0.00'
+            end
+            object ed_F_Karton: TEdit
+              Tag = 10004
+              Left = 0
+              Height = 27
+              Top = 108
+              Width = 164
+              Align = alTop
+              OnExit = check_095_F
+              TabOrder = 4
+              Text = '0.00'
+            end
+            object ed_F_PJeT_butylki: TEdit
+              Tag = 10005
+              Left = 0
+              Height = 27
+              Top = 135
+              Width = 164
+              Align = alTop
+              OnExit = check_095_F
+              TabOrder = 5
+              Text = '0.00'
+            end
+            object ed_F_Polipropilen: TEdit
+              Tag = 10006
+              Left = 0
+              Height = 27
+              Top = 162
+              Width = 164
+              Align = alTop
+              OnExit = check_095_F
+              TabOrder = 6
+              Text = '0.00'
+            end
+            object ed_F_Polijetilen_plenki: TEdit
+              Tag = 10007
+              Left = 0
+              Height = 27
+              Top = 189
+              Width = 164
+              Align = alTop
+              OnExit = check_095_F
+              TabOrder = 7
+              Text = '0.00'
+            end
+            object ed_F_Polijetilen_tara_i_izdelija: TEdit
+              Tag = 10008
+              Left = 0
+              Height = 27
+              Top = 216
+              Width = 164
+              Align = alTop
+              OnExit = check_095_F
+              TabOrder = 8
+              Text = '0.00'
+            end
+            object ed_F_Polistirol: TEdit
+              Tag = 10009
+              Left = 0
+              Height = 27
+              Top = 243
+              Width = 164
+              Align = alTop
+              OnExit = check_095_F
+              TabOrder = 9
+              Text = '0.00'
+            end
+            object ed_F_Plenki_prochie: TEdit
+              Tag = 10010
+              Left = 0
+              Height = 27
+              Top = 270
+              Width = 164
+              Align = alTop
+              OnExit = check_095_F
+              TabOrder = 10
+              Text = '0.00'
+            end
+            object ed_F_Prochie_plastmassy_tverdye: TEdit
+              Tag = 10011
+              Left = 0
+              Height = 27
+              Top = 297
+              Width = 164
+              Align = alTop
+              OnExit = check_095_F
+              TabOrder = 11
+              Text = '0.00'
+            end
+            object ed_F_Tetrapak: TEdit
+              Tag = 10012
+              Left = 0
+              Height = 27
+              Top = 324
+              Width = 164
+              Align = alTop
+              OnExit = check_095_F
+              TabOrder = 12
+              Text = '0.00'
+            end
+            object ed_F_Drevesina: TEdit
+              Tag = 10013
+              Left = 0
+              Height = 27
+              Top = 351
+              Width = 164
+              Align = alTop
+              OnExit = check_095_F
+              TabOrder = 13
+              Text = '0.00'
+            end
+            object ed_F_Tekstil: TEdit
+              Tag = 10014
+              Left = 0
+              Height = 27
+              Top = 378
+              Width = 164
+              Align = alTop
+              OnExit = check_095_F
+              TabOrder = 14
+              Text = '0.00'
+            end
+          end
+        end
+      end
+    end
+    object ts_Selectivnost: TTabSheet
+      Caption = 'Cелективность'
+      ClientHeight = 2206
+      ClientWidth = 944
+      object Panel6: TPanel
+        Left = 0
+        Height = 50
+        Top = 853
+        Width = 942
+        Align = alBottom
+        TabOrder = 0
+      end
+      object ScrollBox4: TScrollBox
+        Left = 0
+        Height = 853
+        Top = 0
+        Width = 942
+        HorzScrollBar.Page = 942
+        VertScrollBar.Page = 853
+        Align = alClient
+        ClientHeight = 849
+        ClientWidth = 938
+        TabOrder = 1
+        object rg_Selectivnost: TRadioGroup
+          Left = 0
+          Height = 70
+          Top = 0
+          Width = 942
+          Align = alTop
+          AutoFill = True
+          AutoSize = True
+          Caption = 'Осуществляется подавление ПВХ?'
+          ChildSizing.LeftRightSpacing = 6
+          ChildSizing.TopBottomSpacing = 6
+          ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+          ChildSizing.EnlargeVertical = crsHomogenousChildResize
+          ChildSizing.ShrinkHorizontal = crsScaleChilds
+          ChildSizing.ShrinkVertical = crsScaleChilds
+          ChildSizing.Layout = cclLeftToRightThenTopToBottom
+          ChildSizing.ControlsPerLine = 1
+          ClientHeight = 51
+          ClientWidth = 938
+          Items.Strings = (
+            'да'
+            'нет'
+          )
+          OnClick = SetOtborPVXPercent
+          TabOrder = 0
+        end
+        object rg_OtborPVXPercent: TRadioGroup
+          Left = 0
+          Height = 88
+          Hint = 'Значение селективности при подавлении ПВХ:'
+          Top = 70
+          Width = 942
+          Align = alTop
+          AutoFill = True
+          AutoSize = True
+          Caption = 'Выберите значение селективности при подавлении ПВХ'
+          ChildSizing.LeftRightSpacing = 6
+          ChildSizing.TopBottomSpacing = 6
+          ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+          ChildSizing.EnlargeVertical = crsHomogenousChildResize
+          ChildSizing.ShrinkHorizontal = crsScaleChilds
+          ChildSizing.ShrinkVertical = crsScaleChilds
+          ChildSizing.Layout = cclLeftToRightThenTopToBottom
+          ChildSizing.ControlsPerLine = 1
+          ClientHeight = 69
+          ClientWidth = 938
+          Items.Strings = (
+            'менее 40 (F=50)'
+            '40-70 (F=25)'
+            '70-90 (F=10)'
+          )
+          OnClick = SetPVXFValue
+          TabOrder = 1
+          Visible = False
+        end
+        object rg_F_OtborPVXPercent: TGroupBox
+          Left = 0
+          Height = 49
+          Top = 158
+          Width = 942
+          Align = alTop
+          AutoSize = True
+          Caption = 'F=?'
+          ClientHeight = 30
+          ClientWidth = 938
+          TabOrder = 2
+          Visible = False
+          object ed_F_OtborPVXPercent: TEdit
+            Left = 5
+            Height = 22
+            Top = 0
+            Width = 155
+            BorderSpacing.Left = 5
+            BorderSpacing.Bottom = 5
+            TabOrder = 0
+            Text = '0.00'
+          end
+        end
+      end
+    end
+    object ts_Result: TTabSheet
+      Caption = 'Результат'
+      ClientHeight = 2206
+      ClientWidth = 944
+      OnShow = ts_ResultShow
+      object ScrollBox1: TScrollBox
+        Left = 0
+        Height = 2206
+        Top = 0
+        Width = 944
+        HorzScrollBar.Page = 942
+        VertScrollBar.Page = 2204
+        Align = alClient
+        ClientHeight = 2204
+        ClientWidth = 942
+        TabOrder = 0
+        object Label1: TLabel
+          Tag = 1
+          Left = 7
+          Height = 22
+          Top = 7
+          Width = 928
+          Align = alTop
+          BorderSpacing.Around = 7
+          Caption = 'Результаты вычисления'
+          Font.Height = -17
+          Font.Name = 'Sans'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label2: TLabel
+          Tag = 1
+          Left = 7
+          Height = 18
+          Top = 368
+          Width = 928
+          Align = alTop
+          BorderSpacing.Around = 7
+          Caption = 'Таблица 2. Состав вторичного сырья'
+          ParentColor = False
+        end
+        object pc_Table2: TPageControl
+          Left = 0
+          Height = 300
+          Top = 393
+          Width = 942
+          ActivePage = ts_Table2
+          Align = alTop
+          TabIndex = 0
+          TabOrder = 0
+          object ts_Table2: TTabSheet
+            Caption = 'Таблица'
+            ClientHeight = 269
+            ClientWidth = 938
+            object sg_Table2: TStringGrid
+              Tag = 1
+              Left = 0
+              Height = 269
+              Top = 0
+              Width = 938
+              Align = alClient
+              AutoFillColumns = True
+              ColCount = 3
+              FixedCols = 0
+              TabOrder = 0
+              ColWidths = (
+                312
+                312
+                312
+              )
+              Cells = (
+                3
+                0
+                0
+                'Наименование компонента'
+                1
+                0
+                'Доля от общего объема ТБО, %'
+                2
+                0
+                'Доля от общего объема вторсырья, %'
+              )
+            end
+          end
+          object ts_Chart2: TTabSheet
+            Caption = 'Диаграмма'
+            ClientHeight = 269
+            ClientWidth = 938
+            object Chart2: TImage
+              Left = 0
+              Height = 269
+              Hint = 'Диаграмма 2. Состав вторичного сырья'
+              Top = 0
+              Width = 901
+              Align = alClient
+              Stretch = True
+            end
+          end
+        end
+        object Label3: TLabel
+          Tag = 1
+          Left = 7
+          Height = 18
+          Top = 700
+          Width = 928
+          Align = alTop
+          BorderSpacing.Around = 7
+          Caption = 'Таблица 3. Состав вторичного топлива из отходов'
+          ParentColor = False
+        end
+        object pc_Table3: TPageControl
+          Left = 0
+          Height = 300
+          Top = 725
+          Width = 942
+          ActivePage = ts_Table3
+          Align = alTop
+          TabIndex = 0
+          TabOrder = 1
+          object ts_Table3: TTabSheet
+            Caption = 'Таблица'
+            ClientHeight = 269
+            ClientWidth = 938
+            object sg_Table3: TStringGrid
+              Tag = 1
+              Left = 0
+              Height = 269
+              Top = 0
+              Width = 938
+              Align = alClient
+              AutoFillColumns = True
+              ColCount = 3
+              FixedCols = 0
+              TabOrder = 0
+              ColWidths = (
+                312
+                312
+                312
+              )
+              Cells = (
+                3
+                0
+                0
+                'Наименование компонента'
+                1
+                0
+                'Доля от общего объема ТБО, %'
+                2
+                0
+                'Доля от общего объема вторичного топлива, %'
+              )
+            end
+          end
+          object ts_Chart3: TTabSheet
+            Caption = 'Диаграмма'
+            ClientHeight = 269
+            ClientWidth = 938
+            object Chart3: TImage
+              Left = 0
+              Height = 269
+              Hint = 'Диаграмма 3. Состав вторичного топлива из отходов'
+              Top = 0
+              Width = 901
+              Align = alClient
+              Stretch = True
+            end
+          end
+        end
+        object Label4: TLabel
+          Tag = 1
+          Left = 7
+          Height = 18
+          Top = 1032
+          Width = 928
+          Align = alTop
+          BorderSpacing.Around = 7
+          Caption = 'Таблица 4. Качество получаемого топлива'
+          ParentColor = False
+        end
+        object sg_Table4: TStringGrid
+          Tag = 1
+          Left = 0
+          Height = 135
+          Top = 1057
+          Width = 942
+          Align = alTop
+          AutoFillColumns = True
+          ColCount = 2
+          FixedCols = 0
+          TabOrder = 2
+          ColWidths = (
+            470
+            470
+          )
+          Cells = (
+            6
+            0
+            0
+            'Параметр RDF'
+            0
+            1
+            '1. Теплотворная способность, МДж/кг'
+            0
+            2
+            '2. Содержание Cl, %'
+            0
+            3
+            '3. Зольность, %'
+            0
+            4
+            '4. Содержание S, %'
+            1
+            0
+            'Значение'
+          )
+        end
+        object Label5: TLabel
+          Tag = 1
+          Left = 7
+          Height = 18
+          Top = 1199
+          Width = 928
+          Align = alTop
+          BorderSpacing.Around = 7
+          Caption = 'Диаграмма 4. Распределение компонентов вторичного топлива с точки зрения теплотворной способности'
+          ParentColor = False
+        end
+        object pl_Chart4: TPanel
+          Left = 0
+          Height = 178
+          Top = 1224
+          Width = 942
+          Align = alTop
+          Caption = 'pl_Chart4'
+          ClientHeight = 178
+          ClientWidth = 942
+          TabOrder = 3
+          object Chart4: TImage
+            Left = 1
+            Height = 176
+            Top = 1
+            Width = 940
+            Align = alClient
+            Stretch = True
+          end
+        end
+        object Label6: TLabel
+          Tag = 1
+          Left = 7
+          Height = 18
+          Top = 1409
+          Width = 928
+          Align = alTop
+          BorderSpacing.Around = 7
+          Caption = 'Диаграмма 5. Распределение компонентов вторичного топлива с точки зрения зольности'
+          ParentColor = False
+        end
+        object pl_Chart5: TPanel
+          Left = 0
+          Height = 178
+          Top = 1434
+          Width = 942
+          Align = alTop
+          Caption = 'pl_Chart5'
+          ClientHeight = 178
+          ClientWidth = 942
+          TabOrder = 4
+          object Chart5: TImage
+            Left = 1
+            Height = 176
+            Top = 1
+            Width = 940
+            Align = alClient
+            Stretch = True
+          end
+        end
+        object Label7: TLabel
+          Tag = 1
+          Left = 7
+          Height = 18
+          Top = 1619
+          Width = 928
+          Align = alTop
+          BorderSpacing.Around = 7
+          Caption = 'Диаграмма 6. Распределение компонентов вторичного топлива с точки зрения содержания серы'
+          ParentColor = False
+        end
+        object pl_Chart6: TPanel
+          Left = 0
+          Height = 178
+          Top = 1644
+          Width = 942
+          Align = alTop
+          Caption = 'pl_Chart6'
+          ClientHeight = 178
+          ClientWidth = 942
+          TabOrder = 5
+          object Chart6: TImage
+            Left = 1
+            Height = 176
+            Top = 1
+            Width = 940
+            Align = alClient
+            Stretch = True
+          end
+        end
+        object Label8: TLabel
+          Tag = 1
+          Left = 7
+          Height = 18
+          Top = 36
+          Width = 928
+          Align = alTop
+          BorderSpacing.Around = 7
+          Caption = 'Таблица 1. Состав отходов'
+          ParentColor = False
+        end
+        object pc_Table1: TPageControl
+          Left = 0
+          Height = 300
+          Top = 61
+          Width = 942
+          ActivePage = ts_Table1
+          Align = alTop
+          TabIndex = 0
+          TabOrder = 6
+          object ts_Table1: TTabSheet
+            Caption = 'Таблица'
+            ClientHeight = 269
+            ClientWidth = 938
+            object sg_Table1: TStringGrid
+              Tag = 1
+              Left = 0
+              Height = 269
+              Top = 0
+              Width = 938
+              Align = alClient
+              AutoFillColumns = True
+              ColCount = 2
+              FixedCols = 0
+              RowCount = 6
+              TabOrder = 0
+              ColWidths = (
+                468
+                468
+              )
+              Cells = (
+                10
+                0
+                0
+                'Компоненты'
+                0
+                1
+                'Вторичное сырье'
+                0
+                2
+                'Вторичное топливо'
+                0
+                3
+                'Отсев'
+                0
+                4
+                '«Хвосты» сортировки'
+                1
+                0
+                'Доля от общего объема ТБО, %'
+                1
+                1
+                '0'
+                1
+                2
+                '0'
+                1
+                3
+                '0'
+                1
+                4
+                '0'
+              )
+            end
+          end
+          object ts_Chart1: TTabSheet
+            Caption = 'Диаграмма'
+            ClientHeight = 269
+            ClientWidth = 938
+            object Chart1: TImage
+              Left = 0
+              Height = 269
+              Hint = 'Диаграмма 1. Состав отходов'
+              Top = 0
+              Width = 922
+              Align = alClient
+              Stretch = True
+            end
+          end
+        end
+      end
+    end
+  end
+  object MainMenu1: TMainMenu
+    left = 64
+    top = 1040
+    object mi_File: TMenuItem
+      Caption = 'Файл'
+      object mi_New: TMenuItem
+        Caption = 'Очистить'
+        ShortCut = 16462
+        OnClick = mi_NewRDF
+      end
+      object mi_Open: TMenuItem
+        Caption = 'Открыть...'
+        ShortCut = 16463
+        OnClick = mi_OpenClick
+      end
+      object mi_SaveAs: TMenuItem
+        Caption = 'Сохранить как...'
+        OnClick = mi_SaveAsClick
+      end
+      object MenuItem1: TMenuItem
+        Caption = '-'
+      end
+      object mi_SaveAsWord: TMenuItem
+        Caption = 'Экспорт в Word...'
+        ShortCut = 16467
+        OnClick = mi_FormToWordFile
+      end
+      object mi_SaveAsExcel: TMenuItem
+        Caption = 'Экспорт в Excel...'
+        OnClick = mi_FormToExcelFile
+      end
+      object mi_print: TMenuItem
+        Caption = 'Печать...'
+        Visible = False
+      end
+      object MenuItem2: TMenuItem
+        Caption = '-'
+      end
+      object mi_Exit: TMenuItem
+        Caption = 'Выход'
+        ShortCut = 16465
+        OnClick = mi_ExitClick
+      end
+    end
+    object mi_Sprav: TMenuItem
+      Caption = 'Справочники'
+      object mi_tbo_k_sprav: TMenuItem
+        Caption = 'Коэффициенты пересчета'
+        OnClick = mi_tbo_k_spravClick
+      end
+      object mi_Melk_Frac: TMenuItem
+        Caption = 'Мелкие фракции'
+        OnClick = mi_Melk_FracClick
+      end
+      object mi_Otbor: TMenuItem
+        Caption = 'Коэффициенты отбора'
+        OnClick = mi_OtborClick
+      end
+      object mi_Calc: TMenuItem
+        Caption = 'Справочные данные'
+        OnClick = mi_CalcClick
+      end
+    end
+  end
+  object md_Charts: TMemDataset
+    Active = True
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftSmallint
+        Precision = 0
+        Size = 0
+      end    
+      item
+        Name = 'Chart'
+        DataType = ftString
+        Precision = 0
+        Size = 20
+      end>
+    left = 144
+    top = 1040
+  end
+  object md_Pies: TMemDataset
+    Active = True
+    FieldDefs = <    
+      item
+        Name = 'Chart_id'
+        DataType = ftSmallint
+        Precision = 0
+        Size = 0
+      end    
+      item
+        Name = 'Name'
+        DataType = ftString
+        Precision = 0
+        Size = 200
+      end    
+      item
+        Name = 'Value'
+        DataType = ftFloat
+        Precision = 4
+        Size = 0
+      end    
+      item
+        Name = 'Color'
+        DataType = ftInteger
+        Precision = 0
+        Size = 0
+      end>
+    left = 224
+    top = 1040
+  end
+  object RDFDataSet: TSdfDataSet
+    FileMustExist = True
+    ReadOnly = False
+    FieldDefs = <>
+    AllowMultiLine = False
+    Delimiter = '^'
+    FirstLineAsSchema = False
+    left = 64
+    top = 984
+  end
+  object dl_Open: TOpenDialog
+    DefaultExt = '.rdf'
+    Filter = '*.rdf'
+    left = 144
+    top = 984
+  end
+  object dl_Save: TSaveDialog
+    Width = 840
+    Height = 630
+    DefaultExt = '.rdf'
+    Filter = '*.rdf'
+    left = 224
+    top = 984
+  end
+end

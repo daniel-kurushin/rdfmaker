@@ -1,0 +1,1320 @@
+object CalcForm: TCalcForm
+  Left = 871
+  Height = 1080
+  Top = 175
+  Width = 1164
+  Caption = 'Таблица для расчета'
+  ClientHeight = 1080
+  ClientWidth = 1164
+  LCLVersion = '1.0.12.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 59
+    Top = 1021
+    Width = 1164
+    Align = alBottom
+    ClientHeight = 59
+    ClientWidth = 1164
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 1046
+      Height = 37
+      Top = 11
+      Width = 107
+      Align = alRight
+      BorderSpacing.Around = 10
+      DefaultCaption = True
+      Kind = bkClose
+      ModalResult = 11
+      TabOrder = 0
+    end
+  end
+  object ScrollBox1: TScrollBox
+    Left = 0
+    Height = 1021
+    Top = 0
+    Width = 1164
+    HorzScrollBar.Page = 1162
+    VertScrollBar.Page = 1019
+    Align = alClient
+    ClientHeight = 1019
+    ClientWidth = 1162
+    TabOrder = 1
+    object pl_Bumaga: TPanel
+      Left = 3
+      Height = 30
+      Top = 3
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '1 Бумага'
+      ClientHeight = 30
+      ClientWidth = 1156
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 0
+      object Panel2: TPanel
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        Caption = 'T, МДж/кг'
+        TabOrder = 0
+      end
+      object Panel3: TPanel
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        Caption = 'З, %'
+        TabOrder = 1
+      end
+      object Panel4: TPanel
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        Caption = 'S, %'
+        TabOrder = 2
+      end
+      object Panel5: TPanel
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        Caption = 'Cl, %'
+        TabOrder = 3
+      end
+    end
+    object pl_Bumaga_ofisnaja: TPanel
+      Left = 3
+      Height = 30
+      Top = 36
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '1.1 Бумага офисная*'
+      ClientHeight = 30
+      ClientWidth = 1156
+      TabOrder = 1
+      object ed_Bumaga_ofisnaja_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '17.60'
+      end
+      object ed_Bumaga_ofisnaja_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '8.00'
+      end
+      object ed_Bumaga_ofisnaja_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.10'
+      end
+      object ed_Bumaga_ofisnaja_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Bumaga_gljancevaja: TPanel
+      Left = 3
+      Height = 30
+      Top = 69
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '1.2 Бумага глянцевая (журналы)'
+      ClientHeight = 30
+      ClientWidth = 1156
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 2
+      object ed_Bumaga_gljancevaja_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '12.70'
+      end
+      object ed_Bumaga_gljancevaja_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '22.24'
+      end
+      object ed_Bumaga_gljancevaja_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.09'
+      end
+      object ed_Bumaga_gljancevaja_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Bumaga_gazetnaja: TPanel
+      Left = 3
+      Height = 30
+      Top = 102
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '1.3 Бумага газетная'
+      ClientHeight = 30
+      ClientWidth = 1156
+      TabOrder = 3
+      object ed_Bumaga_gazetnaja_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '19.70'
+      end
+      object ed_Bumaga_gazetnaja_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '1.50'
+      end
+      object ed_Bumaga_gazetnaja_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.15'
+      end
+      object ed_Bumaga_gazetnaja_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Bumaga_prochaja: TPanel
+      Left = 3
+      Height = 30
+      Top = 135
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '1.4 Бумага прочая'
+      ClientHeight = 30
+      ClientWidth = 1156
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 4
+      object ed_Bumaga_prochaja_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '17.90'
+      end
+      object ed_Bumaga_prochaja_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '1.03'
+      end
+      object ed_Bumaga_prochaja_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.10'
+      end
+      object ed_Bumaga_prochaja_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Karton: TPanel
+      Left = 3
+      Height = 30
+      Top = 168
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '2 Картон'
+      ClientHeight = 30
+      ClientWidth = 1156
+      TabOrder = 5
+      object ed_Karton_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '17.30'
+      end
+      object ed_Karton_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '4.80'
+      end
+      object ed_Karton_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.21'
+      end
+      object ed_Karton_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Polimery: TPanel
+      Left = 3
+      Height = 30
+      Top = 201
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '3 Полимеры'
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 6
+    end
+    object pl_PJeT_butylki: TPanel
+      Left = 3
+      Height = 30
+      Top = 234
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '3.1 ПЭТ бутылки'
+      ClientHeight = 30
+      ClientWidth = 1156
+      TabOrder = 7
+      object ed_PJeT_butylki_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '22.70'
+      end
+      object ed_PJeT_butylki_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0.20'
+      end
+      object ed_PJeT_butylki_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.00'
+      end
+      object ed_PJeT_butylki_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Polipropilen: TPanel
+      Left = 3
+      Height = 30
+      Top = 267
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '3.2 Полипропилен'
+      ClientHeight = 30
+      ClientWidth = 1156
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 8
+      object ed_Polipropilen_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '44.00'
+      end
+      object ed_Polipropilen_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0.60'
+      end
+      object ed_Polipropilen_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.00'
+      end
+      object ed_Polipropilen_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Polijetilen_plenki: TPanel
+      Left = 3
+      Height = 30
+      Top = 300
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '3.3 Полиэтилен пленки (ПЭНД)'
+      ClientHeight = 30
+      ClientWidth = 1156
+      TabOrder = 9
+      object ed_Polijetilen_plenki_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '42.00'
+      end
+      object ed_Polijetilen_plenki_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0.80'
+      end
+      object ed_Polijetilen_plenki_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.00'
+      end
+      object ed_Polijetilen_plenki_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Polijetilen_tara_i_izdelija: TPanel
+      Left = 3
+      Height = 30
+      Top = 333
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '3.4 Полиэтилен тара и изделия (ПЭВД)'
+      ClientHeight = 30
+      ClientWidth = 1156
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 10
+      object ed_Polijetilen_tara_i_izdelija_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '41.00'
+      end
+      object ed_Polijetilen_tara_i_izdelija_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0.70'
+      end
+      object ed_Polijetilen_tara_i_izdelija_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.00'
+      end
+      object ed_Polijetilen_tara_i_izdelija_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Polistirol: TPanel
+      Left = 3
+      Height = 30
+      Top = 366
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '3.5 Полистирол'
+      ClientHeight = 30
+      ClientWidth = 1156
+      TabOrder = 11
+      object ed_Polistirol_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '40.20'
+      end
+      object ed_Polistirol_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0.40'
+      end
+      object ed_Polistirol_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.00'
+      end
+      object ed_Polistirol_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Polivinilhlorid: TPanel
+      Left = 3
+      Height = 30
+      Top = 399
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '3.6 Поливинилхлорид'
+      ClientHeight = 30
+      ClientWidth = 1156
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 12
+      object ed_Polivinilhlorid_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '18.00'
+      end
+      object ed_Polivinilhlorid_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '1.10'
+      end
+      object ed_Polivinilhlorid_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.00'
+      end
+      object ed_Polivinilhlorid_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '57.00'
+      end
+    end
+    object pl_Plenki_prochie: TPanel
+      Left = 3
+      Height = 30
+      Top = 432
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '3.7 Пленки прочие'
+      ClientHeight = 30
+      ClientWidth = 1156
+      TabOrder = 13
+      object ed_Plenki_prochie_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '46.10'
+      end
+      object ed_Plenki_prochie_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '1.50'
+      end
+      object ed_Plenki_prochie_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.00'
+      end
+      object ed_Plenki_prochie_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Prochie_plastmassy_tverdye: TPanel
+      Left = 3
+      Height = 30
+      Top = 465
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '3.8 Прочие пластмассы твердые'
+      ClientHeight = 30
+      ClientWidth = 1156
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 14
+      object ed_Prochie_plastmassy_tverdye_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '31.00'
+      end
+      object ed_Prochie_plastmassy_tverdye_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0.90'
+      end
+      object ed_Prochie_plastmassy_tverdye_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.00'
+      end
+      object ed_Prochie_plastmassy_tverdye_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Tetrapak: TPanel
+      Left = 3
+      Height = 30
+      Top = 498
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '4 Тетрапак'
+      ClientHeight = 30
+      ClientWidth = 1156
+      TabOrder = 15
+      object ed_Tetrapak_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '17.90'
+      end
+      object ed_Tetrapak_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '2.63'
+      end
+      object ed_Tetrapak_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.08'
+      end
+      object ed_Tetrapak_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Organika: TPanel
+      Left = 3
+      Height = 30
+      Top = 531
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '5 Органика'
+      ClientHeight = 30
+      ClientWidth = 1156
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 16
+      object ed_Organika_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '19.20'
+      end
+      object ed_Organika_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0.70'
+      end
+      object ed_Organika_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.04'
+      end
+      object ed_Organika_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Steklo: TPanel
+      Left = 3
+      Height = 30
+      Top = 564
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '6 Стекло'
+      ClientHeight = 30
+      ClientWidth = 1156
+      TabOrder = 17
+      object ed_Steklo_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '-49.00'
+      end
+      object ed_Steklo_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '98.50'
+      end
+      object ed_Steklo_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.00'
+      end
+      object ed_Steklo_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Chernye_metally: TPanel
+      Left = 3
+      Height = 30
+      Top = 597
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '7 Черные металлы'
+      ClientHeight = 30
+      ClientWidth = 1156
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 18
+      object ed_Chernye_metally_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '-290.00'
+      end
+      object ed_Chernye_metally_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '92.00'
+      end
+      object ed_Chernye_metally_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.00'
+      end
+      object ed_Chernye_metally_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Cvetnye_metally: TPanel
+      Left = 3
+      Height = 30
+      Top = 630
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '8 Цветные металлы'
+      TabOrder = 19
+    end
+    object pl_Alljuminij: TPanel
+      Left = 3
+      Height = 30
+      Top = 663
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '8.1 Аллюминий'
+      ClientHeight = 30
+      ClientWidth = 1156
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 20
+      object ed_Alljuminij_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '-278.00'
+      end
+      object ed_Alljuminij_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '96.00'
+      end
+      object ed_Alljuminij_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.00'
+      end
+      object ed_Alljuminij_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Prochie_metally: TPanel
+      Left = 3
+      Height = 30
+      Top = 696
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '8.2 Прочие металлы'
+      ClientHeight = 30
+      ClientWidth = 1156
+      TabOrder = 21
+      object ed_Prochie_metally_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '-290.00'
+      end
+      object ed_Prochie_metally_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '95.00'
+      end
+      object ed_Prochie_metally_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.00'
+      end
+      object ed_Prochie_metally_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Drevesina: TPanel
+      Left = 3
+      Height = 30
+      Top = 729
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '9 Древесина'
+      ClientHeight = 30
+      ClientWidth = 1156
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 22
+      object ed_Drevesina_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '15.00'
+      end
+      object ed_Drevesina_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '0.60'
+      end
+      object ed_Drevesina_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.00'
+      end
+      object ed_Drevesina_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Tekstil: TPanel
+      Left = 3
+      Height = 30
+      Top = 762
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '10 Текстиль'
+      ClientHeight = 30
+      ClientWidth = 1156
+      TabOrder = 23
+      object ed_Tekstil_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '12.84'
+      end
+      object ed_Tekstil_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '8.00'
+      end
+      object ed_Tekstil_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.80'
+      end
+      object ed_Tekstil_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Inertnye_materialy: TPanel
+      Left = 3
+      Height = 30
+      Top = 795
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '11 Инертные материалы (камни, штукатурка, бетонные изделия и пр.)'
+      ClientHeight = 30
+      ClientWidth = 1156
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 24
+      object ed_Inertnye_materialy_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '-84.00'
+      end
+      object ed_Inertnye_materialy_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '92.00'
+      end
+      object ed_Inertnye_materialy_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.00'
+      end
+      object ed_Inertnye_materialy_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+    object pl_Prochie_komponenty: TPanel
+      Left = 3
+      Height = 30
+      Top = 828
+      Width = 1156
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Around = 3
+      BorderSpacing.InnerBorder = 2
+      BevelOuter = bvNone
+      Caption = '12 Прочие компоненты'
+      ClientHeight = 30
+      ClientWidth = 1156
+      TabOrder = 25
+      object ed_Prochie_komponenty_T: TEdit
+        Left = 756
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 0
+        Text = '7.00'
+      end
+      object ed_Prochie_komponenty_Z: TEdit
+        Left = 956
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 1
+        Text = '50.00'
+      end
+      object ed_Prochie_komponenty_S: TEdit
+        Left = 1056
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 2
+        Text = '0.90'
+      end
+      object ed_Prochie_komponenty_Cl: TEdit
+        Left = 856
+        Height = 30
+        Top = 0
+        Width = 100
+        Align = alRight
+        TabOrder = 3
+        Text = '0.00'
+      end
+    end
+  end
+end
